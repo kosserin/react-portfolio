@@ -140,7 +140,7 @@ main {
     visibility: hidden;
     pointer-events: none;
     transform: translateY(-10px);
-    transition: all 750ms ease-in;
+    transition: all 500ms ease-in;
 
     &.appear{
         opacity: 1;

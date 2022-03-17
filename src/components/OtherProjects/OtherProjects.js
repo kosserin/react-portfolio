@@ -23,7 +23,7 @@ const DUMMY_OTHER_PROJECTS = [
     {
         id: 'o3',
         title: 'Servis Struja website',
-        desc: 'lorem ipsum amet dolorem akir sako dorem ti. Akino gari tau sa po trk smore kuo vace des.',
+        desc: 'Website for electrician company I designed and coded.',
         technologiesUsed: ['JavaScript', 'Sass', 'Figma'],
         githubLink: 'https://github.com/kosserin/struja-servis',
         previewLink: 'https://kosserin.github.io/struja-servis/'

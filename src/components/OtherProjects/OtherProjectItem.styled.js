@@ -18,7 +18,7 @@ transition: all 250ms ease-out;
         "e e";
     border-radius: 3px;
     padding: 2rem;
-    background-color: rgba(20, 0, 20, 1);
+    background-color: rgba(255, 255, 255, .04);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
     position: relative;
     pointer-events: none;

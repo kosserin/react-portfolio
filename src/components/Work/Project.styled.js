@@ -26,6 +26,7 @@ position: relative;
     min-height: 250px;
     border-radius: 3px;
     box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
 }
 
 & .image-overlay {
@@ -34,7 +35,7 @@ position: relative;
     left: 0;
     width: 100%;
     height: 99%;
-    background-color: rgba(20, 0, 20, 0.7);
+    background-color: rgba(20, 0, 20, 0.5);
     border-radius: 3px;
     pointer-events: none;
     transition: all 250ms ease-out;
@@ -125,9 +126,10 @@ position: relative;
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+        object-fit: cover;
 
         @media(max-width: 980px) {
-            opacity: .08;
+            opacity: .2;
             visibility: visible;
             pointer-events: all;
         }

@@ -31,7 +31,7 @@ const DUMMY_PROJECTS = [
   {
     id: 'p3',
     title: 'React Food Ordering App',
-    desc: 'Meal items are fetched from firebase database, and user can select meal he wants and amount of them. By clicking on Orders button modal pops-up with selected meals, their amount and total price. On the next step by clicking Order button, another modal with form for credit card shows up and the most basic validation is added. If everything is alright, meals are ordered and form informations are saved, just as ordered meals.',
+    desc: 'Meal items are fetched on load from firebase and user can choose how much he wants to order. After confirming amount and meals, new modal with basic validation is shown and if user enters everything successfully, selected meals will be sent to firebase.',
     technologiesUsed: ['React', 'Firebase', 'CSS Modules'],
     githubLink: 'https://github.com/kosserin/react-food-order-state/',
     previewLink: 'https://kosserin.github.io/react-food-order-state/',
