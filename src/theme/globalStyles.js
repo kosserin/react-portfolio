@@ -27,7 +27,7 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
-  background-color: #110619;
+  background-color: var(--dark);
 }
 
 h1 {
@@ -58,7 +58,7 @@ h2 {
 
     & div {
     height: 1px;
-    background-color: #64417d;
+    background-color: var(--purple);
     transition: all 500ms ease;
     margin-left: 20px;
 
@@ -93,25 +93,25 @@ p{
 .button {
   cursor: pointer;
   font-size: 0.875rem;
-  color: rgb(199, 185, 209);
   border-radius: 3px;
   padding: 0.7rem 1.5rem;
-  background: rgba(0, 0, 0, 0.6);
   font-weight: 500;
   transition: all 250ms ease-out;
   border: none;
   outline: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .6);
   text-decoration: none;
   font-weight: 500;
   font-size: .875rem;
   width: fit-content;
   display: flex;
   margin: 0 auto;
+  background: var(--gray);
+  color: var(--black);
 
  &:hover {
-  background: #c7b9d1;
-  color: rgba(0, 0, 0, 1);
+  color: var(--gray);
+  background: var(--black);
 }
 }
 

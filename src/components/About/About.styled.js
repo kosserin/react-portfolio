@@ -84,7 +84,7 @@ h2 {
         position: absolute;
         width: 100%;
         height: 99.2%;
-        background-color: rgba(20, 0, 20, 0.4);
+        background-color: rgba(15, 0, 15, 0.4);
         top: 0;
         left: 0;
         border-radius: 3px;

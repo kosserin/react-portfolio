@@ -45,7 +45,7 @@ const Work = () => {
     <WorkStyled id='work-section' className='work-section'>
       <h2>
         <span className='fade-in'>02.</span>
-        <span className='fade-in'>Some Things I've Built 💪</span> 
+        <span className='fade-in'>Some Things I've Built</span> 
         <div className='line slide-in'></div>
       </h2>
       <ul className='projects'>

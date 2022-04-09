@@ -15,6 +15,7 @@ position: relative;
     width: 40vw;
     overflow: hidden;
     border-radius: 3px;
+    height: 100%;
 
   
 @media (max-width: 980px) {
@@ -34,8 +35,8 @@ position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 99%;
-    background-color: rgba(20, 0, 20, 0.5);
+    height: 100%;
+    background-color: rgba(15, 0, 15, 0.5);
     border-radius: 3px;
     pointer-events: none;
     transition: all 250ms ease-out;
@@ -55,7 +56,7 @@ position: relative;
     justify-content: flex-start;
     align-items: flex-end;
     text-align: right;
-    width: 600px;
+    width: 43%;
     margin: 0 0 0 auto;
     text-decoration: none;
     min-height: 250px;
@@ -89,8 +90,10 @@ position: relative;
 }
 
 & p {
+    position: relative;
+    width: 500px;
     padding: 1rem;
-    background-color: rgba(20, 0, 20, 1);
+    background-color: rgb(15, 0, 15);
     border-radius: 3px;
     margin: 5px 0;
     font-size: 0.875rem;
@@ -129,7 +132,7 @@ position: relative;
         object-fit: cover;
 
         @media(max-width: 980px) {
-            opacity: .2;
+            opacity: .1;
             visibility: visible;
             pointer-events: all;
         }

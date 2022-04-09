@@ -18,11 +18,15 @@ transition: all 250ms ease-out;
         "e e";
     border-radius: 3px;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, .04);
+    background-color: rgba(15, 0, 15, 1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.26);
     position: relative;
     pointer-events: none;
     height: 100%;
+
+    @media(max-width: 768px) {
+        background-color: rgba(255, 255, 255, .04);
+    }
 
     & > svg {
         font-size: 2rem;

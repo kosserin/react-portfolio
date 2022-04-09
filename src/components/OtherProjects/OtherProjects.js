@@ -113,7 +113,7 @@ const OtherProjects = () => {
   return (
       <OtherProjectsStyled id='other-projects-section' className='other-projects fade-in'>
     <h2>Other Noteworthy Projects</h2>
-    <a href="https://github.com/kosserin/" target="_blank">view the github</a>
+    <a title='link to github account' href="https://github.com/kosserin/" target="_blank" rel="noreferrer">view the github</a>
         <div>
             {content}
         </div>

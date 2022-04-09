@@ -12,7 +12,7 @@ const Introduce = () => {
     <p>I'm a dedicated front-end developer who loves what he does, is responsible for tasks he gets and pushes his limits to meet client's requirements. I deliver top quality websites with readable and reusable code that is easy to go through.</p>
     {/* <p>I'm a frontend developer from Serbia who specializes in building (and ocasionally designing) brilliant websites. 
     Currently, I'm a student on Faculty of Engineering Sciences doing freelance in spare time.</p> */}
-    <a href="mailto: kostic.andrija00@gmail.com">Get In Touch</a>
+    <a title='link to email' className='button' href="mailto: kostic.andrija00@gmail.com">Get In Touch</a>
     </IntroduceStyled>
   )
 }

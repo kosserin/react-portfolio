@@ -12,7 +12,7 @@ h2 {
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 5rem;
   list-style: none;
   
 @media (max-width: 980px) {

@@ -8,11 +8,11 @@ const Copyright = () => {
   return (
     <CopyrightStyled id='footer-section'>
       <div className='links fade-in'>
-        <a href="https://github.com/kosserin/" target="_blank"><FaGithub /></a>
-        <a href="https://www.instagram.com/andrijakostic_/" target="_blank"><FaInstagram /></a>
-        <a href="https://www.facebook.com/andrijakole.kostic.52/" target="_blank"><FaFacebookF /></a>
+        <a title='link to github account' href="https://github.com/kosserin/" target="_blank" rel="noreferrer"><FaGithub /></a>
+        <a title='link to instagram account' href="https://www.instagram.com/andrijakostic_/" target="_blank" rel="noreferrer"><FaInstagram /></a>
+        <a title='link to facebook account' href="https://www.facebook.com/andrijakole.kostic.52/" target="_blank" rel="noreferrer"><FaFacebookF /></a>
       </div>
-      <a className='fade-in' href="https://github.com/kosserin/" target="_blank">© Andrija Kostic 2022</a>
+      <a title='link to github account' className='fade-in' href="https://github.com/kosserin/" target="_blank" rel="noreferrer">© Andrija Kostic 2022</a>
       <p className='fade-in'>Made with React</p>
     </CopyrightStyled>
   )

@@ -9,15 +9,15 @@ const SideLinks = () => {
     <SideLinksStyled id='sidelinks-section'>
       <div className='side left-side'>
       <div className='links'>
-        <a href="https://github.com/kosserin/" target="_blank"><FaGithub /></a>
-        <a href="https://www.instagram.com/andrijakostic_/" target="_blank"><FaInstagram /></a>
-        <a href="https://www.facebook.com/andrijakole.kostic.52/" target="_blank"><FaFacebookF /></a>
+        <a title='link to github account' href="https://github.com/kosserin/" target="_blank" rel="noreferrer"><FaGithub /></a>
+        <a title='link to instagram account' href="https://www.instagram.com/andrijakostic_/" target="_blank" rel="noreferrer"><FaInstagram /></a>
+        <a title='link to facebook account' href="https://www.facebook.com/andrijakole.kostic.52/" target="_blank" rel="noreferrer"><FaFacebookF /></a>
       </div>
         <div className='line'></div>
       </div>
       <div className='side right-side'>
       <div className='links'>
-      <a href="mailto: kostic.andrija00@gmail.com">kostic.andrija00@gmail.com</a>
+      <a title='link to email' href="mailto: kostic.andrija00@gmail.com">kostic.andrija00@gmail.com</a>
       </div>
         <div className='line'></div>
       </div>

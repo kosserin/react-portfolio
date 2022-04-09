@@ -49,30 +49,7 @@ animation-delay: 2.5s;
 }
 
 & a {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10rem;
-    border-radius: 3px;
-    min-width: fit-content;
-    height: 3rem;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: all 250ms ease-in-out;
-    background-color: var(--black);
-    color: var(--gray);
-
-    @media (max-width: 768px) {
-        font-size: 0.875rem;
-        width: 9rem;
-    }
-
-    &:hover {
-        background-color: var(--gray);
-        color: var(--black);
-    }
+  margin: 0 auto 0 0;
 }
 
 

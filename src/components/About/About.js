@@ -19,7 +19,7 @@ const About = () => {
         <br /><p>Fast-forward to today, I'm in my final year of college, doing freelance for local entrepreneurs and started
          a career on Upwork. My main focus these days is learning as much
           as I can, constantly improving my code and making websites with great performances that are enjoyable for users to go
-           through. Shortened version about me you can find in my <a href={resume} target="_blank" download={resume}>Resume</a>.</p>
+           through. Shortened version about me you can find in my <a title='my resume' href={resume} target="_blank" rel="noreferrer" download={resume}>Resume</a>.</p>
         <br /><p>Here are a few technologies I've been working with recently:</p>
         <ul>
             <li>React</li>
