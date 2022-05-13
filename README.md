@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# My portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Yep, here it is. My portfolio made with React. 
+On the next link you can see the design I've made in Figma: 
+https://www.figma.com/file/LHdK27dQrDaQaykyKt8Qr3/My-Portfolio?node-id=0%3A1
+On the link above you can find colors I used, typography, images and everything for the design.
 
-## Available Scripts
+When user comes to the website, first they see is my logo being drawn and moved to the top left corner. The dilemma was if logo should go opacity: 0 and scale: 0 and just appear on the top left corner, or to just slide there, but I believe that selected transition feels way more natural to the user.
 
-In the project directory, you can run:
+After that, side links appears from the sides, navigation on the top and content. I tried my best to make that landing page not overwhelming and to be filled yet not to much so the user feels frustrated. User can check for basic informations about me such as technologies I've worked with and how long I'm in the web development world.
 
-### `npm start`
+Then user comes to my featured projects with link to github repository and live preview (if is available). This section was dynamically rendered, so I created local data file and based on number of object in that data(array), that's how many components will be rendered.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The same principle comes to the "Other Noteworthy Projects" with local data dynamically rendering and their links to the github and live preview.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+At the end, there's place to contact me if user would like to hire me or ask me something.
 
-### `npm test`
+![Screenshot 2022-05-13 at 08-32-17 Andrija Kostic](https://user-images.githubusercontent.com/71221268/168226171-0f33b14a-4003-455c-ad15-80f1fb780ede.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot 2022-05-13 at 08-32-56 Andrija Kostic](https://user-images.githubusercontent.com/71221268/168226177-4156d5a3-8bba-436b-bc02-3ebcb82650b5.png)
