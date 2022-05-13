@@ -5,7 +5,7 @@ On the next link you can see the design I've made in Figma:
 https://www.figma.com/file/LHdK27dQrDaQaykyKt8Qr3/My-Portfolio?node-id=0%3A1
 On the link above you can find colors I used, typography, images and everything for the design.
 
-When user comes to the website, first they see is my logo being drawn and moved to the top left corner. The dilemma was if logo should go opacity: 0 and scale: 0 and just appear on the top left corner, or to just slide there, but I believe that selected transition feels way more natural to the user.
+When user comes to the website, first he sees is my logo being drawn and moved to the top left corner. The dilemma for me was if logo should go opacity: 0 and scale: 0 and just appear on the top left corner, or to just slide there, but I believe that selected transition feels way more natural to the user.
 
 After that, side links appears from the sides, navigation on the top and content. I tried my best to make that landing page not overwhelming and to be filled yet not to much so the user feels frustrated. User can check for basic informations about me such as technologies I've worked with and how long I'm in the web development world.
 
