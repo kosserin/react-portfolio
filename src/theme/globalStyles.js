@@ -41,13 +41,13 @@ body {
 
 .style-desc {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 21px;
 }
 
 .style-p {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
 }
 

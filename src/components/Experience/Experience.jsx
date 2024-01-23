@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const experiences = [
   {
-    from: "FEB 2023",
+    from: "Feb 2023",
     to: "Present",
     companyName: "Holycode",
     role: "Angular Developer",
@@ -23,8 +23,8 @@ const experiences = [
     ],
   },
   {
-    from: "AUG 2022",
-    to: "FEB 2023",
+    from: "Aug 2022",
+    to: "Feb 2023",
     companyName: "Holycode",
     role: "Angular Intern",
     description:
@@ -41,7 +41,11 @@ const experiences = [
   },
 ];
 
-const StyledExperience = styled.div`
+const StyledExperiences = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
   .experience-item {
     display: flex;
     flex-wrap: wrap;
@@ -49,11 +53,12 @@ const StyledExperience = styled.div`
 
   .from-to {
     width: 200px;
+    color: var(--light);
   }
 
   .experience-details {
     flex: 1;
-    min-width: 300px
+    min-width: 300px;
   }
 
   .company-name {
@@ -66,11 +71,18 @@ const StyledExperience = styled.div`
     color: var(--light);
     margin-top: 4px;
   }
+
+  .technologies {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 `;
 
 const Experience = () => {
   return (
-    <StyledExperience>
+    <StyledExperiences>
       {experiences.map((experience, i) => (
         <div className="experience-item" key={`experience-${i}`}>
           <h3 className="from-to style-h3">
@@ -97,7 +109,7 @@ const Experience = () => {
         hasLineBellow={false}
         hasLinkIcon={true}
       />
-    </StyledExperience>
+    </StyledExperiences>
   );
 };
 
