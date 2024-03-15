@@ -5,31 +5,18 @@ import About from "../About/About";
 import Experience from "../Experience/Experience";
 
 const StyledContent = styled.div`
-  background: var(--purple);
-  color: var(--white);
+  background: var(--purple-bg);
+  padding-top: var(--spacing-7);
+  padding-inline: var(--spacing-4);
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 120px;
-  margin: 0 auto;
-  padding: 0 5vw 120px;
-  max-width: 1280px;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  gap: var(--spacing-10);
 `;
 
 const StyledMain = styled.main`
-  flex: 1;
-  padding-top: 120px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  max-width: 500px;
-
-  @media (max-width: 1024px) {
-    max-width: unset;
-  }
+  gap: var(--spacing-10);
 `;
 
 const Content = () => {
@@ -38,7 +25,7 @@ const Content = () => {
       <Intro />
       <StyledMain>
         <About />
-        <Experience />
+        {/* <Experience /> */}
         <p className="style-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
           ea. Voluptatum, ullam ratione! Saepe, reprehenderit eveniet adipisci

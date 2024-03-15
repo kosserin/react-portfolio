@@ -13,11 +13,12 @@ import css from "../../assets/css.svg";
 import javascript from "../../assets/javascript.svg";
 import scss from "../../assets/scss.svg";
 import styled from "styled-components";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--spacing-2);
 
   p {
     color: var(--light);
@@ -45,12 +46,13 @@ const StyledContainer = styled.div`
 const About = () => {
   return (
     <StyledContainer>
-      <p className="style-p">
+      <SectionTitle name={'About'} />
+      <p className="style-body">
         Hello! My name is Andrija and I enjoy creating websites that live on the
         internet. My journey with web development started two years ago when I
         was looking for profession I would love to do.
       </p>
-      <p className="style-p">
+      <p className="style-body">
         Fast-forward to today, I'm in my final year of college, doing freelance
         for local entrepreneurs and started a career on Upwork. My main focus
         these days is learning as much as I can, constantly improving my code
@@ -58,7 +60,7 @@ const About = () => {
         to go through. Shortened version about me you can find.
       </p>
       <div className="wrapper">
-        <p className="style-p">Technologies I’m strong with:</p>
+        <p className="style-body">Technologies I’m strong with:</p>
         <div className="technologies-wrapper">
           <div>
             <img src={angular} alt="" />
