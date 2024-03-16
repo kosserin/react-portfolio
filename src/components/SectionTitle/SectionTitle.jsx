@@ -7,10 +7,14 @@ const StyledTitle = styled.h3`
   position: sticky;
   top: 0;
   left: 0;
-  margin-inline: calc(var(--spacing-4) * -1);
+  margin-inline: calc(var(--spacing-3) * -1);
   z-index: 2;
   backdrop-filter: blur(8px);
   background-color: rgba(23, 13, 39, 0.9);
+
+  @media screen and (min-width: 1080px) {
+    display: none;
+  }
 `;
 
 const SectionTitle = ({ name }) => {

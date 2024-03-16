@@ -1,10 +1,11 @@
 import React from "react";
 import link from "../../assets/arrow-top-right.svg";
 import TechnologyButton from "../TechnologyButton/TechnologyButton";
-import Button from "../Button/Button";
+import Button from "../Link/Link";
 import styled from "styled-components";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
-const experiences = [
+const EXPERIENCES = [
   {
     from: "Feb 2023",
     to: "Present",
@@ -82,8 +83,9 @@ const StyledExperiences = styled.div`
 
 const Experience = () => {
   return (
-    <StyledExperiences>
-      {experiences.map((experience, i) => (
+    <StyledExperiences id="experienceSection">
+      <SectionTitle name={'Experience'} />
+      {EXPERIENCES.map((experience, i) => (
         <div className="experience-item" key={`experience-${i}`}>
           <h3 className="from-to style-h3">
             {experience.from} - {experience.to}

@@ -30,25 +30,29 @@ const GlobalStyle = createGlobalStyle`
   font-family: "Inter", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 // TYPOGRAPHY
 
-.style-h1 {
+  .style-h1 {
     font-size: 38px;
     font-weight: 600;
 
-    @min-width(1080px) {
-        font-size: 48px;
+    @media screen and (min-width: 1080px) {
+      font-size: 48px;
     }
-}
+  }
 
-.style-h2 {
+  .style-h2 {
     font-size: 18px;
     font-weight: 500;
-    
-        @min-width(1080px) {
-            font-size: 20px;
-        }
-}
+
+    @media screen and (min-width: 1080px) {
+      font-size: 20px;
+    }
+  }
 
 .style-h3 {
     font-size: 18px;
@@ -82,9 +86,16 @@ const GlobalStyle = createGlobalStyle`
 }
 
 
-.style-body-link {
+.style-body__link {
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1.5px solid transparent;
+
+    &:hover {
+        transition: 250ms ease-in;
+        border-bottom: 1.5px solid var(--white);
+    }
 }
 
 .style-small {

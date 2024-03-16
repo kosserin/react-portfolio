@@ -15,6 +15,61 @@ import scss from "../../assets/scss.svg";
 import styled from "styled-components";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
+const TECHNOLOGIES = [
+  {
+    name: 'Angular',
+    imageSource: angular
+  },
+  {
+    name: 'React',
+    imageSource: react
+  },
+  {
+    name: 'Typescript',
+    imageSource: typescript
+  },
+  {
+    name: 'Ionic',
+    imageSource: ionic
+  },
+  {
+    name: 'Figma',
+    imageSource: figma
+  },
+  {
+    name: 'Capacitor',
+    imageSource: capacitor
+  },
+  {
+    name: 'Cordova',
+    imageSource: cordova
+  },
+  {
+    name: 'Jasmine',
+    imageSource: jasmine
+  },
+  {
+    name: 'RxJS',
+    imageSource: rxjs
+  },
+  {
+    name: 'HTML',
+    imageSource: html
+  },
+  {
+    name: 'CSS',
+    imageSource: css
+  },
+  {
+    name: 'JavaScript',
+    imageSource: javascript
+  },
+  {
+    name: 'SCSS',
+    imageSource: scss
+  },
+]
+
 const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,99 +78,70 @@ const StyledContainer = styled.div`
   p {
     color: var(--light);
   }
+`;
 
-  .wrapper p {
-    margin-bottom: 16px;
-  }
+const Technologies = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 
-  .technologies-wrapper {
+  div {
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
 
-    div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      gap: 4px;
+    img {
+      height: 48px;
     }
   }
 `;
 
 const About = () => {
   return (
-    <StyledContainer>
-      <SectionTitle name={'About'} />
+    <StyledContainer id="aboutSection">
+      <SectionTitle name={"About"} />
       <p className="style-body">
-        Hello! My name is Andrija and I enjoy creating websites that live on the
-        internet. My journey with web development started two years ago when I
-        was looking for profession I would love to do.
+        Since childhood, my fascination with computers, sparked by gaming, led
+        me to explore software development. In high school, a computer
+        technician module ignited my passion for programming and creating
+        user-centric tools. My first UI project using C# Builder kick-started my
+        enduring interest in UI/UX design.
       </p>
       <p className="style-body">
-        Fast-forward to today, I'm in my final year of college, doing freelance
-        for local entrepreneurs and started a career on Upwork. My main focus
-        these days is learning as much as I can, constantly improving my code
-        and making websites with great performances that are enjoyable for users
-        to go through. Shortened version about me you can find.
+        In my final year of college, I transitioned from theory to practice,
+        taking on projects on{" "}
+        <a href="#a" className="style-body__link color-white">Upwork</a> that
+        required converting design files into responsive, functional code within
+        tight deadlines. Additionally, I independently designed, developed, and
+        deployed a{" "}
+        <a href="#a" className="style-body__link color-white">
+          website for a local business
+        </a>
+        , further solidifying my real-world experience.
       </p>
-      <div className="wrapper">
-        <p className="style-body">Technologies I’m strong with:</p>
-        <div className="technologies-wrapper">
-          <div>
-            <img src={angular} alt="" />
-            <p className="style-desc">Angular</p>
+      <p className="style-body">
+        Now, as a professional at{" "}
+        <a href="#a" className="style-body__link color-white">Holycode</a>, I am
+        driven by the challenge of crafting well-written and functional code. By
+        marrying my engineering background with web development, I strive to
+        build applications that are not only technically sound but also
+        user-friendly and engaging.
+      </p>
+      <p className="style-body">
+        When I step away from the computer, I usually go to the gym, read or
+        spend time with my fiancé, family, and friends.
+      </p>
+      <p className="style-body mb-2">Technologies I’m strong with:</p>
+      <Technologies>
+        {TECHNOLOGIES.map((t, i) => (
+          <div key={`technology-${i}`}>
+            <img src={t.imageSource} alt="" />
+            <p className="style-h5 color-white">{t.name}</p>
           </div>
-          <div>
-            <img src={react} alt="" />
-            <p className="style-desc">React</p>
-          </div>
-          <div>
-            <img src={typescript} alt="" />
-            <p className="style-desc">Typescript</p>
-          </div>
-          <div>
-            <img src={ionic} alt="" />
-            <p className="style-desc">Ionic</p>
-          </div>
-          <div>
-            <img src={figma} alt="" />
-            <p className="style-desc">Figma</p>
-          </div>
-          <div>
-            <img src={capacitor} alt="" />
-            <p className="style-desc">Capacitor</p>
-          </div>
-          <div>
-            <img src={cordova} alt="" />
-            <p className="style-desc">Cordova</p>
-          </div>
-          <div>
-            <img src={jasmine} alt="" />
-            <p className="style-desc">Jasmine</p>
-          </div>
-          <div>
-            <img src={rxjs} alt="" />
-            <p className="style-desc">RxJS</p>
-          </div>
-          <div>
-            <img src={html} alt="" />
-            <p className="style-desc">HTML5</p>
-          </div>
-          <div>
-            <img src={css} alt="" />
-            <p className="style-desc">CSS3</p>
-          </div>
-          <div>
-            <img src={javascript} alt="" />
-            <p className="style-desc">JavaScript</p>
-          </div>
-          <div>
-            <img src={scss} alt="" />
-            <p className="style-desc">SCSS</p>
-          </div>
-        </div>
-      </div>
+        ))}
+      </Technologies>
     </StyledContainer>
   );
 };
