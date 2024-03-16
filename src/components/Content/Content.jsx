@@ -10,14 +10,12 @@ const StyledContent = styled.div`
 `;
   
 const StyledWrapper = styled.div`
-  padding-top: var(--spacing-7);
   padding-inline: 5vw;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-10);
 
   @media screen and (min-width: 1080px) {
-    padding-top: 120px;
     max-width: 1280px;
     margin-inline: auto;
     flex-direction: row;
@@ -27,7 +25,6 @@ const StyledWrapper = styled.div`
 const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-10);
   padding-bottom: var(--spacing-7);
   
   @media screen and (min-width: 1080px) {

@@ -71,9 +71,14 @@ const TECHNOLOGIES = [
 ]
 
 const StyledContainer = styled.div`
+  padding-top: var(--spacing-7);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
+
+  @media screen and (min-width: 1080px) {
+    padding-top: 120px;
+  }
 
   p {
     color: var(--light);

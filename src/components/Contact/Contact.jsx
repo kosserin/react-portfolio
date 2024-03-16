@@ -4,12 +4,13 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import Link from "../Link/Link";
 
 const StyledContact = styled.section`
+  padding-top: var(--spacing-10);
 
-a {
+  a {
     text-decoration: none;
     color: var(--white);
     border-bottom: 1.5px solid var(--white);
-}
+  }
 `;
 
 const Contact = () => {

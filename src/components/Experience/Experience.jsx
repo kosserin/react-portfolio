@@ -46,6 +46,7 @@ const StyledExperiences = styled.div`
   display: flex;
   flex-direction: column;
   gap: 48px;
+  padding-top: var(--spacing-10);
 
   .experience-item {
     display: flex;
