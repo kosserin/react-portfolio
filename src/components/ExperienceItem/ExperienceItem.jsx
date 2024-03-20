@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
   flex-direction: column;
   gap: var(--spacing-2);
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 680px) {
     flex-direction: row;
   }
 `;
@@ -32,7 +32,7 @@ const StyledHeading = styled.div`
 `;
 
 const StyledTime = styled.h6`
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 680px) {
     min-width: 160px;
   }
 `;

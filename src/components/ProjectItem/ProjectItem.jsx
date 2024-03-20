@@ -9,7 +9,7 @@ const StyledContainer = styled.div`
   align-items: flex-start;
   gap: var(--spacing-4);
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 680px) {
     flex-direction: row;
     gap: 32px;
   }
@@ -36,7 +36,7 @@ const StyledHeading = styled.div`
 const StyledProjectDetails = styled.div`
   order: 1;
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 680px) {
     order: 2;
   }
 `;
@@ -46,7 +46,7 @@ const StyledProjectImage = styled.img`
   width: 220px;
   object-fit: contain;
 
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 680px) {
     width: 160px;
     order: 1;
   }
