@@ -4,6 +4,7 @@ import styled from "styled-components";
 import About from "../About/About";
 import Experience from "../Experience/Experience";
 import Contact from "../Contact/Contact";
+import Projects from "../Projects/Projects";
 
 const StyledContent = styled.div`
   background: var(--purple-bg);
@@ -13,10 +14,11 @@ const StyledWrapper = styled.div`
   padding-inline: 5vw;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-10);
-
+  padding-top: var(--spacing-7);
+  
   @media screen and (min-width: 1080px) {
     max-width: 1280px;
+    gap: var(--spacing-10);
     margin-inline: auto;
     flex-direction: row;
   }
@@ -29,7 +31,7 @@ const StyledMain = styled.main`
   
   @media screen and (min-width: 1080px) {
     padding-bottom: 120px;
-    max-width: 600px;
+    width: 50%;
   }
 `;
 
@@ -41,6 +43,7 @@ const Content = () => {
         <StyledMain>
           <About />
           <Experience />
+          <Projects />
           <Contact />
         </StyledMain>
       </StyledWrapper>

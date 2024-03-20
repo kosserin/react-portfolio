@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
 :root {
   --white: #DBDBDB;
-  --light: #C8BBD6;
+  --light: #9d95a5;
   --purple-bg: #150B21;
   --chip-bg: #322147;
   --chip-txt: #B988F4;
@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--purple-bg);
 }
 
 // TYPOGRAPHY
@@ -77,6 +81,7 @@ html {
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.2px;
+    text-transform: uppercase;
 }
 
 .style-body {
@@ -99,7 +104,7 @@ html {
 }
 
 .style-small {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.6;
 }

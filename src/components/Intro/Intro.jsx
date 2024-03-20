@@ -8,11 +8,17 @@ const StyledIntro = styled.header`
   flex-direction: column;
   gap: var(--spacing-3);
 
+  a {
+    text-decoration: none;
+    display: block;
+  }
+
   @media screen and (min-width: 1080px) {
     position: sticky;
     top: 120px;
     left: 0px;
     height: calc(100vh - 240px);
+    max-width: 400px;
     justify-content: space-between;
   }
 `;
@@ -69,7 +75,9 @@ const Intro = () => {
   return (
     <StyledIntro>
       <div>
-        <h1 className="style-h1 color-white mb-2">Andrija Kostic</h1>
+        <a href="#a" className="style-h1 color-white mb-2">
+          Andrija Kostic
+        </a>
         <h2 className="style-h2 color-white mb-4">Frontend Developer</h2>
         <p className="style-body color-light mb-5">
           I have passion for building web apps and hybrid native apps using
@@ -80,34 +88,34 @@ const Intro = () => {
         </MediaQuery>
 
         <MediaQuery query="(min-device-width: 1080px)">
-        <StyledNav>
-          <ul>
-            <li>
-              <a href="#aboutSection">
-                <div className="line"></div>
-                <p className="style-nav__link color-light">About</p>
-              </a>
-            </li>
-            <li>
-              <a href="#experienceSection">
-                <div className="line"></div>
-                <p className="style-nav__link color-light">Experience</p>
-              </a>
-            </li>
-            <li>
-              <a href="#a">
-                <div className="line"></div>
-                <p className="style-nav__link color-light">Projects</p>
-              </a>
-            </li>
-            <li>
-              <a href="#contactSection">
-                <div className="line"></div>
-                <p className="style-nav__link color-light">Contact</p>
-              </a>
-            </li>
-          </ul>
-        </StyledNav>
+          <StyledNav>
+            <ul>
+              <li>
+                <a href="#aboutSection">
+                  <div className="line"></div>
+                  <p className="style-nav__link color-light">About</p>
+                </a>
+              </li>
+              <li>
+                <a href="#experienceSection">
+                  <div className="line"></div>
+                  <p className="style-nav__link color-light">Experience</p>
+                </a>
+              </li>
+              <li>
+                <a href="#a">
+                  <div className="line"></div>
+                  <p className="style-nav__link color-light">Projects</p>
+                </a>
+              </li>
+              <li>
+                <a href="#contactSection">
+                  <div className="line"></div>
+                  <p className="style-nav__link color-light">Contact</p>
+                </a>
+              </li>
+            </ul>
+          </StyledNav>
         </MediaQuery>
       </div>
       <StyledSocials>

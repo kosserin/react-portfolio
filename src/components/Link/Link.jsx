@@ -9,6 +9,13 @@ const StyledLink = styled.a`
   border-bottom: 1.5px solid var(--light);
   width: fit-content;
   padding-bottom: 4px;
+  transition: all 250ms ease-in;
+
+  &:hover {
+    color: var(--chip-txt);
+    border-bottom-color: var(--chip-txt);
+    transform: translateY(-2px);
+  }
 `;
 
 const Link = ({ text, href }) => {

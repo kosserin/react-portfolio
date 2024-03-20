@@ -70,14 +70,14 @@ const TECHNOLOGIES = [
   },
 ]
 
-const StyledContainer = styled.div`
+const StyledSection = styled.section`
   padding-top: var(--spacing-7);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
 
   @media screen and (min-width: 1080px) {
-    padding-top: 120px;
+    // padding-top: 120px;
   }
 
   p {
@@ -105,7 +105,7 @@ const Technologies = styled.div`
 
 const About = () => {
   return (
-    <StyledContainer id="aboutSection">
+    <StyledSection id="aboutSection">
       <SectionTitle name={"About"} />
       <p className="style-body">
         Since childhood, my fascination with computers, sparked by gaming, led
@@ -147,7 +147,7 @@ const About = () => {
           </div>
         ))}
       </Technologies>
-    </StyledContainer>
+    </StyledSection>
   );
 };
 
