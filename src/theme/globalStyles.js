@@ -59,24 +59,18 @@ body {
   }
 
 .style-h3 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1;
-}
-
-.style-h4 {
     font-size: 16px;
     font-weight: 500;
     line-height: 1;
 }
 
-.style-h5 {
+.style-h4 {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
 }
 
-.style-h6 {
+.style-h5 {
     font-size: 12px;
     font-weight: 500;
     line-height: 1;
@@ -95,11 +89,10 @@ body {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 1.5px solid transparent;
 
     &:hover {
         transition: 250ms ease-in;
-        border-bottom: 1.5px solid var(--white);
+        color: var(--chip-txt);
     }
 }
 

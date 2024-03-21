@@ -8,7 +8,7 @@ import deplace from "../assets/projects/deplace.png";
 export const PROJECTS = [
   {
     title:
-      "Development of a web application that works with database of a flight company",
+      "Flight company web application",
     description:
       "Final thesis on college, design, develop and deploy a web application that simulates work with a real database",
     imageSource: flight,

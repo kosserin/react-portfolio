@@ -8,11 +8,6 @@ const StyledIntro = styled.header`
   flex-direction: column;
   gap: var(--spacing-3);
 
-  a {
-    text-decoration: none;
-    display: block;
-  }
-
   @media screen and (min-width: 1080px) {
     position: sticky;
     top: 120px;
@@ -23,39 +18,39 @@ const StyledIntro = styled.header`
   }
 `;
 
-const StyledNav = styled.nav`
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-3);
-    list-style: none;
+const StyledLink = styled.a`
+  text-decoration: none;
+`;
 
-    li {
-      a {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: var(--spacing-2);
-        width: fit-content;
+const StyledList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  list-style: none;
+`;
 
-        &:hover {
-          .line {
-            width: 80px;
-            background-color: var(--white);
-          }
+const StyledItemLink = styled.a`
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  width: fit-content;
 
-          p {
-            color: var(--white);
-          }
-        }
+  .line {
+    height: 1px;
+    width: 40px;
+    background-color: var(--light);
+    transition: 250ms ease-in-out;
+  }
 
-        .line {
-          height: 1px;
-          width: 40px;
-          background-color: var(--light);
-          transition: 250ms ease-in-out;
-        }
-      }
+  &:hover {
+    .line {
+      width: 80px;
+      background-color: var(--white);
+    }
+
+    span {
+      color: var(--white);
     }
   }
 `;
@@ -64,7 +59,7 @@ const StyledSocials = styled.div`
   display: flex;
   gap: 16px;
   align-items: center;
-
+  
   a:hover svg path {
     transition: fill 250ms ease-in-out;
     fill: var(--white);
@@ -75,9 +70,9 @@ const Intro = () => {
   return (
     <StyledIntro>
       <div>
-        <a href="#a" className="style-h1 color-white mb-2">
+        <StyledLink href="#a" className="style-h1 color-white mb-2">
           Andrija Kostic
-        </a>
+        </StyledLink>
         <h2 className="style-h2 color-white mb-4">Frontend Developer</h2>
         <p className="style-body color-light mb-5">
           I have passion for building web apps and hybrid native apps using
@@ -88,34 +83,36 @@ const Intro = () => {
         </MediaQuery>
 
         <MediaQuery query="(min-device-width: 1080px)">
-          <StyledNav>
-            <ul>
+          <nav>
+            <StyledList>
               <li>
-                <a href="#aboutSection">
+                <StyledItemLink href="#aboutSection">
                   <div className="line"></div>
-                  <p className="style-nav__link color-light">About</p>
-                </a>
+                  <span className="style-nav__link color-light">About</span>
+                </StyledItemLink>
               </li>
               <li>
-                <a href="#experienceSection">
+                <StyledItemLink href="#experienceSection">
                   <div className="line"></div>
-                  <p className="style-nav__link color-light">Experience</p>
-                </a>
+                  <span className="style-nav__link color-light">
+                    Experience
+                  </span>
+                </StyledItemLink>
               </li>
               <li>
-                <a href="#a">
+                <StyledItemLink href="#projectsSection">
                   <div className="line"></div>
-                  <p className="style-nav__link color-light">Projects</p>
-                </a>
+                  <span className="style-nav__link color-light">Projects</span>
+                </StyledItemLink>
               </li>
               <li>
-                <a href="#contactSection">
+                <StyledItemLink href="#contactSection">
                   <div className="line"></div>
-                  <p className="style-nav__link color-light">Contact</p>
-                </a>
+                  <span className="style-nav__link color-light">Contact</span>
+                </StyledItemLink>
               </li>
-            </ul>
-          </StyledNav>
+            </StyledList>
+          </nav>
         </MediaQuery>
       </div>
       <StyledSocials>

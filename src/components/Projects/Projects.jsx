@@ -13,7 +13,7 @@ const StyledProjects = styled.div`
   margin-top: var(--spacing-2);
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 60px;
 `;
 
 const Projects = () => {
@@ -25,7 +25,7 @@ const Projects = () => {
           <ProjectItem project={project} key={`project-${i}`} />
         ))}
       </StyledProjects>
-      <Link text={"View Full Resume"} href={"#dsadas"} />
+      <Link text={"View All Projects"} href={"#dsadas"} />
     </StyledSection>
   );
 };

@@ -13,7 +13,7 @@ const StyledExperiences = styled.div`
   margin-top: var(--spacing-2);
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 60px;
 `;
 
 const Experience = () => {

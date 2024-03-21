@@ -27,6 +27,7 @@ const StyledHeading = styled.div`
   }
 
   svg {
+    transform: translateY(4px);
     margin-left: 4px;
   }
 `;
@@ -41,7 +42,7 @@ const ExperienceItem = ({ experience }) => {
   return (
     <HoverWrapper href={experience.linkUrl}>
       <StyledContainer>
-        <StyledTime className="style-h6 color-light">
+        <StyledTime className="style-h5 color-light">
           {experience.from} — {experience.to}
         </StyledTime>
         <div>
@@ -65,7 +66,7 @@ const ExperienceItem = ({ experience }) => {
               />
             </svg>
           </StyledHeading>
-          <h3 className="style-h4 color-light mb-3">{experience.role}</h3>
+          <h3 className="style-h3 color-light mb-3">{experience.role}</h3>
           <p className="style-small color-light mb-3">
             {experience.description}
           </p>

@@ -29,6 +29,7 @@ const StyledHeading = styled.div`
   }
 
   svg {
+    transform: translateY(4px);
     margin-left: 4px;
   }
 `;

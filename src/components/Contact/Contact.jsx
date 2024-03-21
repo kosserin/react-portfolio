@@ -9,12 +9,6 @@ const StyledSection = styled.section`
   p {
     margin-top: var(--spacing-2);
   }
-
-  a {
-    text-decoration: none;
-    color: var(--white);
-    border-bottom: 1.5px solid var(--white);
-  }
 `;
 
 const Contact = () => {
