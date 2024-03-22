@@ -9,6 +9,10 @@ const StyledSection = styled.section`
   flex-direction: column;
   gap: var(--spacing-2);
 
+  @media screen and (min-width: 1080px) {
+    padding-top: 120px;
+  }
+
   p {
     color: var(--light);
   }

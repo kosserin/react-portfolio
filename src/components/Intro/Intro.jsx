@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "../Link/Link";
 import styled from "styled-components";
 import MediaQuery from "../MediaQuery/MediaQuery";
@@ -25,7 +25,7 @@ const StyledLink = styled.a`
 const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-3);
+  gap: var(--spacing-4);
   list-style: none;
 `;
 
@@ -37,10 +37,21 @@ const StyledItemLink = styled.a`
   width: fit-content;
 
   .line {
-    height: 1px;
+    height: 0.5px;
     width: 40px;
     background-color: var(--light);
     transition: 250ms ease-in-out;
+  }
+
+  &.active {
+    .line {
+      width: 80px;
+      background-color: var(--white);
+    }
+
+    span {
+      color: var(--white);
+    }
   }
 
   &:hover {
@@ -59,7 +70,7 @@ const StyledSocials = styled.div`
   display: flex;
   gap: 16px;
   align-items: center;
-  
+
   a:hover svg path {
     transition: fill 250ms ease-in-out;
     fill: var(--white);
@@ -67,6 +78,32 @@ const StyledSocials = styled.div`
 `;
 
 const Intro = () => {
+  const [links, setLinks] = useState([]);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    setTimeout(() => {
+      const xd = document.querySelectorAll("header div nav ul li a");
+      setLinks(xd);
+    });
+
+    window.onscroll = () => {
+      sections.forEach((s, sIndex) => {
+        let top = window.scrollY;
+        let offset = s.offsetTop;
+        let height = s.offsetHeight;
+
+        if (top >= offset && top < offset + height) {
+          links.forEach((l) => {
+            l.classList.remove("active");
+            links[sIndex].classList.add("active");
+          });
+        }
+      });
+    };
+  }, [links]);
+
   return (
     <StyledIntro>
       <div>
@@ -86,7 +123,7 @@ const Intro = () => {
           <nav>
             <StyledList>
               <li>
-                <StyledItemLink href="#aboutSection">
+                <StyledItemLink href="#aboutSection" className="active">
                   <div className="line"></div>
                   <span className="style-nav__link color-light">About</span>
                 </StyledItemLink>

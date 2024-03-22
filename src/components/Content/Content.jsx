@@ -17,6 +17,7 @@ const StyledWrapper = styled.div`
   padding-top: var(--spacing-7);
   
   @media screen and (min-width: 1080px) {
+    padding-top: 0;
     max-width: 1280px;
     gap: var(--spacing-10);
     margin-inline: auto;

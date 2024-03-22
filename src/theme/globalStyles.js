@@ -114,10 +114,10 @@ body {
 }
 
 .style-nav__link {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1;
-    letter-spacing: 1px;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
 }
 
