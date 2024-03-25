@@ -91,7 +91,7 @@ const Intro = () => {
     window.onscroll = () => {
       sections.forEach((s, sIndex) => {
         let top = window.scrollY;
-        let offset = s.offsetTop;
+        let offset = s.offsetTop - 500;
         let height = s.offsetHeight;
 
         if (top >= offset && top < offset + height) {
