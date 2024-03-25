@@ -37,7 +37,7 @@ const StyledItemLink = styled.a`
   width: fit-content;
 
   .line {
-    height: 0.5px;
+    height: 1px;
     width: 40px;
     background-color: var(--light);
     transition: 250ms ease-in-out;
