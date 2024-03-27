@@ -10,7 +10,7 @@ const StyledTitle = styled.h3`
   margin-inline: -5vw;
   z-index: 2;
   backdrop-filter: blur(8px);
-  background-color: rgba(23, 13, 39, 0.9);
+  background-color: rgba(21, 11, 33, 0.8);
 
   @media screen and (min-width: 1080px) {
     display: none;

@@ -18,7 +18,10 @@ const Contact = () => {
       <p className="style-body color-light mb-1">
         Have a project you think I could be a good fit? Let’s talk.
       </p>
-      <Link text={"kostic.andrija00@gmail.com"} href={"#dsadas"} />
+      <Link
+        text={"kostic.andrija00@gmail.com"}
+        href={"mailto:kostic.andrija00@gmail.com"}
+      />
     </StyledSection>
   );
 };

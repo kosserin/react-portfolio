@@ -41,39 +41,34 @@ const About = () => {
     <StyledSection id="aboutSection">
       <SectionTitle name={"About"} />
       <p className="style-body">
-        Since childhood, my fascination with computers, sparked by gaming, led
-        me to explore software development. In high school, a computer
-        technician module ignited my passion for programming and creating
-        user-centric tools. My first UI project using C# Builder kick-started my
-        enduring interest in UI/UX design.
+        Ever since childhood, my passion for computers ignited by gaming has
+        been the driving force behind my journey into software development. It
+        was during high school when I delved into a project using C++ Builder
+        that my enduring fascination with user interface design was sparked.
       </p>
+
       <p className="style-body">
-        In my final year of college, I transitioned from theory to practice,
-        taking on projects on{" "}
-        <a href="#a" className="style-body__link color-white">
-          Upwork
+        Fast-forward to today, I've had the privilege of building{" "}
+        <a
+          href="https://sfdespot.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="style-body__link color-white"
+        >
+          a website for local business
         </a>{" "}
-        that required converting design files into responsive, functional code
-        within tight deadlines. Additionally, I independently designed,
-        developed, and deployed a{" "}
-        <a href="#a" className="style-body__link color-white">
-          website for a local business
-        </a>
-        , further solidifying my real-world experience.
-      </p>
-      <p className="style-body">
-        Now, as a professional at{" "}
-        <a href="#a" className="style-body__link color-white">
-          Holycode
-        </a>
-        , I am driven by the challenge of crafting well-written and functional
-        code. By marrying my engineering background with web development, I
-        strive to build applications that are not only technically sound but
-        also user-friendly and engaging.
-      </p>
-      <p className="style-body">
-        When I step away from the computer, I usually go to the gym, read or
-        spend time with my fiancé, family, and friends.
+        and convert designs into code at Upwork. I'm motivated by the challenge
+        of providing customers with exceptional user interfaces at{" "}
+        <a
+          href="https://www.neon-free.ch/en/"
+          target="_blank"
+          rel="noreferrer"
+          className="style-body__link color-white"
+        >
+          Neon
+        </a>{" "}
+        crafting well-written and functional code that follows the best
+        practices.
       </p>
       <p className="style-body mb-2">Technologies I’m strong with:</p>
       <Technologies>

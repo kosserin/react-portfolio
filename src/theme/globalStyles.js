@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
 
 :root {
   --white: #DBDBDB;
-  --light: #b8afc1;
+  --light: #9081a0;
   --purple-bg: #150B21;
   --chip-bg: #322147;
   --chip-txt: #B988F4;
@@ -87,7 +87,7 @@ body {
 
 .style-body__link {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 
     &:hover {

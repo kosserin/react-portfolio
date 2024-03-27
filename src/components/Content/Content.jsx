@@ -11,11 +11,15 @@ const StyledContent = styled.div`
 `;
 
 const StyledGradient = styled.div`
-  background: radial-gradient(
-    800px at var(--x) var(--y),
-    rgba(185, 136, 244, 0.1),
-    transparent 80%
-  );
+  background: none;
+
+  @media screen and (min-width: 1080px) {
+    background: radial-gradient(
+      800px at var(--x) var(--y),
+      rgba(185, 136, 244, 0.1),
+      transparent 80%
+    );
+  }
 `;
 
 const StyledWrapper = styled.div`
@@ -30,6 +34,7 @@ const StyledWrapper = styled.div`
     gap: var(--spacing-10);
     margin-inline: auto;
     flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
@@ -40,7 +45,7 @@ const StyledMain = styled.main`
 
   @media screen and (min-width: 1080px) {
     padding-bottom: 120px;
-    width: 50%;
+    max-width: 600px;
   }
 `;
 

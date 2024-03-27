@@ -42,7 +42,7 @@ const Projects = () => {
           />
         ))}
       </StyledProjects>
-      <Link text={"View All Projects"} href={"#dsadas"} />
+      <Link text={"View All Projects"} href={"https://github.com/kosserin"} />
     </StyledSection>
   );
 };

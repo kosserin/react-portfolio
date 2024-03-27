@@ -4,6 +4,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import Link from "../Link/Link";
 import ExperienceItem from "../ExperienceItem/ExperienceItem";
 import { EXPERIENCES } from "../../constants/experiences";
+import cv from '../../assets/resume/Andrija_Kostic_CV.pdf';
 
 const StyledSection = styled.section`
   padding-top: var(--spacing-10);
@@ -42,7 +43,7 @@ const Experience = () => {
           />
         ))}
       </StyledExperiences>
-      <Link text={"View Full Resume"} href={"#dsadas"} />
+      <Link text={"View Full Resume"} href={cv} />
     </StyledSection>
   );
 };

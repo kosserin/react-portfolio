@@ -20,7 +20,7 @@ export const EXPERIENCES = [
   {
     from: "Aug 2022",
     to: "Feb 2023",
-    companyName: "Holycode",
+    companyName: "Holycode (Neon)",
     role: "Angular Developer Internship",
     description:
       "Built practical skills with Angular, Ionic, and Cordova, actively contributing to cross-platform app development. Conducted research on migrating from Cordova to Capacitor during my internship. Proficient in Jira for project management, Bitbucket for version control, and various git commands for collaborative development.",

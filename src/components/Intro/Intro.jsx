@@ -107,16 +107,19 @@ const Intro = () => {
   return (
     <StyledIntro>
       <div>
-        <StyledLink href="#a" className="style-h1 color-white mb-2">
+        <StyledLink href="#" className="style-h1 color-white mb-2">
           Andrija Kostic
         </StyledLink>
         <h2 className="style-h2 color-white mb-4">Frontend Developer</h2>
         <p className="style-body color-light mb-5">
-          I have passion for building web apps and hybrid native apps using
-          Angular and React.
+          Specialized in using Angular and React to create stunning digital
+          experiences.
         </p>
         <MediaQuery query="(max-device-width: 1080px)">
-          <Link text={"kostic.andrija00@gmail.com"} href="#dnjasodsa" />
+          <Link
+            text={"kostic.andrija00@gmail.com"}
+            href="mailto:kostic.andrija00@gmail.com"
+          />
         </MediaQuery>
 
         <MediaQuery query="(min-device-width: 1080px)">
@@ -169,7 +172,11 @@ const Intro = () => {
             />
           </svg>
         </a>
-        <a href="https://github.com/kosserin" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/kosserin/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <svg
             width="24"
             height="24"

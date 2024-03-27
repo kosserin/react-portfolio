@@ -38,7 +38,7 @@ const StyledWrapper = styled.a`
       }
 
       svg path {
-        transform: translate(2px, -2px);
+        transform: translate(4px, -4px);
         stroke: var(--chip-txt);
       }
     }
@@ -87,6 +87,8 @@ const HoverWrapper = ({
       onMouseMove={(e) => handleMouseMove(e)}
       onMouseLeave={(e) => handleOnMouseLeave(e)}
       href={href}
+      target="_blank"
+      rel="noreferrer"
       className={
         highlightedIndex !== null && highlightedIndex !== index && "not-focused"
       }

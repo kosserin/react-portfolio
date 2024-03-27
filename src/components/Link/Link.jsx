@@ -23,14 +23,14 @@ const StyledLink = styled.a`
 
     svg path {
       stroke: var(--chip-txt);
-      transform: translate(2px, -2px);
+      transform: translate(4px, -4px);
     }
   }
 `;
 
 const Link = ({ text, href }) => {
   return (
-    <StyledLink href={href}>
+    <StyledLink href={href} target="_blank" rel="noreferrer">
       <span className="style-h3">{text}</span>
       <svg
         width="16"
