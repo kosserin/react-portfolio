@@ -53,9 +53,21 @@ const StyledProjectImage = styled.img`
   }
 `;
 
-const ProjectItem = ({ project }) => {
+const ProjectItem = ({
+  project,
+  highlightedIndex,
+  handleMouseEnter,
+  handleMouseLeave,
+  index,
+}) => {
   return (
-    <HoverWrapper href={project.linkUrl}>
+    <HoverWrapper
+      href={project.linkUrl}
+      index={index}
+      highlightedIndex={highlightedIndex}
+      handleMouseEnter={handleMouseEnter}
+      handleMouseLeave={handleMouseLeave}
+    >
       <StyledContainer>
         <StyledProjectDetails>
           <StyledHeading>

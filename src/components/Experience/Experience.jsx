@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import Link from "../Link/Link";
@@ -17,12 +17,29 @@ const StyledExperiences = styled.div`
 `;
 
 const Experience = () => {
+  const [highlightedIndex, setHighlightedIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHighlightedIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHighlightedIndex(null);
+  };
+
   return (
     <StyledSection id="experienceSection">
       <SectionTitle name={"Experience"} />
       <StyledExperiences className="mb-6">
         {EXPERIENCES.map((experience, i) => (
-          <ExperienceItem experience={experience} key={`experience-${i}`} />
+          <ExperienceItem
+            highlightedIndex={highlightedIndex}
+            handleMouseEnter={handleMouseEnter}
+            handleMouseLeave={handleMouseLeave}
+            index={i}
+            experience={experience}
+            key={`experience-${i}`}
+          />
         ))}
       </StyledExperiences>
       <Link text={"View Full Resume"} href={"#dsadas"} />

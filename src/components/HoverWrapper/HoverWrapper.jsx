@@ -5,6 +5,11 @@ const StyledWrapper = styled.a`
   text-decoration: none;
   position: relative;
   z-index: 1;
+  transition: opacity 250ms ease-in;
+
+  &.not-focused {
+    opacity: 0.4;
+  }
 
   &::before {
     z-index: -1;
@@ -36,8 +41,24 @@ const StyledWrapper = styled.a`
   }
 `;
 
-const HoverWrapper = ({ href, children }) => (
-  <StyledWrapper href={href}>{children}</StyledWrapper>
+const HoverWrapper = ({
+  href,
+  handleMouseEnter,
+  handleMouseLeave,
+  index,
+  highlightedIndex,
+  children,
+}) => (
+  <StyledWrapper
+    onMouseEnter={() => handleMouseEnter(index)}
+    onMouseLeave={() => handleMouseLeave()}
+    href={href}
+    className={
+      highlightedIndex !== null && highlightedIndex !== index && "not-focused"
+    }
+  >
+    {children}
+  </StyledWrapper>
 );
 
 export default HoverWrapper;

@@ -38,9 +38,21 @@ const StyledTime = styled.h6`
   }
 `;
 
-const ExperienceItem = ({ experience }) => {
+const ExperienceItem = ({
+  highlightedIndex,
+  handleMouseEnter,
+  handleMouseLeave,
+  experience,
+  index,
+}) => {
   return (
-    <HoverWrapper href={experience.linkUrl}>
+    <HoverWrapper
+      href={experience.linkUrl}
+      index={index}
+      highlightedIndex={highlightedIndex}
+      handleMouseEnter={handleMouseEnter}
+      handleMouseLeave={handleMouseLeave}
+    >
       <StyledContainer>
         <StyledTime className="style-h5 color-light">
           {experience.from} — {experience.to}

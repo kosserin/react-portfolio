@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import Link from "../Link/Link";
 import { PROJECTS } from "../../constants/projects";
@@ -17,12 +17,29 @@ const StyledProjects = styled.div`
 `;
 
 const Projects = () => {
+  const [highlightedIndex, setHighlightedIndex] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHighlightedIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHighlightedIndex(null);
+  };
+
   return (
     <StyledSection id="projectsSection">
       <SectionTitle name={"Projects"} />
       <StyledProjects className="mb-6">
         {PROJECTS.map((project, i) => (
-          <ProjectItem project={project} key={`project-${i}`} />
+          <ProjectItem
+            highlightedIndex={highlightedIndex}
+            handleMouseEnter={handleMouseEnter}
+            handleMouseLeave={handleMouseLeave}
+            index={i}
+            project={project}
+            key={`project-${i}`}
+          />
         ))}
       </StyledProjects>
       <Link text={"View All Projects"} href={"#dsadas"} />
