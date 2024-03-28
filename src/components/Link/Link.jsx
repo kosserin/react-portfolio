@@ -30,7 +30,7 @@ const StyledLink = styled.a`
 
 const Link = ({ text, href }) => {
   return (
-    <StyledLink href={href} target="_blank" rel="noreferrer">
+    <StyledLink href={href}>
       <span className="style-h3">{text}</span>
       <svg
         width="16"
