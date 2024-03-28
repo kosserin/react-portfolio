@@ -112,8 +112,8 @@ const Intro = () => {
         </StyledLink>
         <h2 className="style-h2 color-white mb-4">Frontend Developer</h2>
         <p className="style-body color-light mb-5">
-          Specialized in using Angular and React to create stunning digital
-          experiences.
+          Specialized in crafting stunning web and hybrid applications using
+          Angular and React.
         </p>
         <MediaQuery query="(max-device-width: 1080px)">
           <Link
