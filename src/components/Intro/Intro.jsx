@@ -91,10 +91,20 @@ const Intro = () => {
     const handleScroll = () => {
       sections.forEach((s, sIndex) => {
         let top = window.scrollY;
-        let offset = s.offsetTop - 500;
+        let offset = s.offsetTop;
         let height = s.offsetHeight;
+        console.log(top >= offset && top < offset + height);
 
-        if (top >= offset && top < offset + height) {
+        const sectionId = s.getAttribute('id');
+        if (
+          sectionId === "contactSection" &&
+          top + window.innerHeight >= s.offsetTop
+        ) {
+          links.forEach((l) => {
+            l.classList.remove("active");
+            links[sIndex].classList.add("active");
+          });
+        } else if (top >= offset && top < offset + height) {
           links.forEach((l) => {
             l.classList.remove("active");
             links[sIndex].classList.add("active");
