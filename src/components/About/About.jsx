@@ -48,17 +48,8 @@ const About = () => {
       </p>
 
       <p className="style-body">
-        Fast-forward to today, I've had the privilege of building{" "}
-        <a
-          href="https://sfdespot.com/"
-          target="_blank"
-          rel="noreferrer"
-          className="style-body__link color-white"
-        >
-          a website for local business
-        </a>{" "}
-        and convert designs into code at Upwork. I'm motivated by the challenge
-        of providing customers with exceptional user interfaces at{" "}
+        Fast-forward to today, I'm motivated by the challenge of providing
+        customers with exceptional user interfaces at{" "}
         <a
           href="https://www.neon-free.ch/en/"
           target="_blank"
@@ -68,7 +59,16 @@ const About = () => {
           Neon
         </a>{" "}
         crafting well-written and functional code that follows the best
-        practices.
+        practices. I've had the privilege of building{" "}
+        <a
+          href="https://sfdespot.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="style-body__link color-white"
+        >
+          a website for local business
+        </a>{" "}
+        and convert designs into code at Upwork.
       </p>
       <p className="style-body mb-2">Technologies I’m strong with:</p>
       <Technologies>

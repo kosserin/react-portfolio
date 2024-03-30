@@ -5,7 +5,7 @@ export const EXPERIENCES = [
     companyName: "Holycode (Neon)",
     role: "Angular Developer",
     description:
-      "Develop and uphold crucial components integral to Holycode's frontend, spanning the entire product. Collaborate closely with cross-functional teams, encompassing developers, testers, designers, and product managers, to instill and champion best practices in web accessibility.",
+      "Develop and uphold crucial components integral to Neon's frontend, spanning the entire product. Collaborate closely with cross-functional teams, encompassing developers, testers, designers, and product managers, to translate design concepts and backend functionalities into frontend code.",
     technologies: [
       "Angular",
       "Ionic",

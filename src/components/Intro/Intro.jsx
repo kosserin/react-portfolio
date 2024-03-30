@@ -84,11 +84,11 @@ const Intro = () => {
     const sections = document.querySelectorAll("section");
 
     setTimeout(() => {
-      const xd = document.querySelectorAll("header div nav ul li a");
-      setLinks(xd);
+      const navLinks = document.querySelectorAll("header div nav ul li a");
+      setLinks(navLinks);
     });
 
-    window.onscroll = () => {
+    const handleScroll = () => {
       sections.forEach((s, sIndex) => {
         let top = window.scrollY;
         let offset = s.offsetTop - 500;
@@ -101,7 +101,13 @@ const Intro = () => {
           });
         }
       });
-    };
+    }
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
   }, [links]);
 
   return (

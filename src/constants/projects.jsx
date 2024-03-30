@@ -11,11 +11,12 @@ export const PROJECTS = [
       "Final thesis on college, design, develop and deploy a web application that simulates work with a real database",
     imageSource: flight,
     technologies: ["React", "MongoDB", "JavaScript", "styled-components"],
-    linkUrl: "https://magnificent-torte-3a57d9.netlify.app/",
+    linkUrl: "https://github.com/kosserin/flight-company",
   },
   {
     title: "Football school website",
-    description: "Design, develop, deploy and maintain local business website.",
+    description:
+      "Design, develop, deploy and maintain a website for local business.",
     imageSource: football,
     technologies: ["HTML", "SCSS", "JavaScript", "Figma", "SwiperJS"],
     linkUrl: "https://sfdespot.com/",
@@ -23,7 +24,7 @@ export const PROJECTS = [
   {
     title: "Monstercat Audio Player",
     description:
-      "Part of a frontendpractice challenge. Develop one page with functional custom audio player. Audio player can start, stop, repeat, move to previous or next song, start a random song and increase or decrease a volume.",
+      "Develop and deployed one page web application with fully functional custom audio player. Audio player can start a song, stop, repeat, move to previous or next song, start a random song and increase or decrease a volume.",
     imageSource: audio,
     technologies: ["JavaScript", "SCSS", "HTML"],
     linkUrl: "https://kosserin.github.io/monstercat-audio-player/",
@@ -31,7 +32,7 @@ export const PROJECTS = [
   {
     title: "Canal Street Market",
     description:
-      "Part of a frontendpractice challenge. Develop one page with multiple layouts.",
+      "Develop and deploy fully responsive one page web application with multiple layouts.",
     imageSource: canal,
     technologies: ["JavaScript", "SCSS", "HTML"],
     linkUrl: "https://kosserin.github.io/canal-about/",
@@ -39,7 +40,7 @@ export const PROJECTS = [
   {
     title: "Deplace Maison",
     description:
-      "Part of a frontendpractice challenge. Develop one page with loading animation on the start.",
+      "Develop and deploy fully responsive one page web application with loading animation on the start.",
     imageSource: deplace,
     technologies: ["JavaScript", "SCSS", "HTML"],
     linkUrl: "https://kosserin.github.io/deplace-maison/",
