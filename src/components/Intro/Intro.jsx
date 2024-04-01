@@ -93,9 +93,8 @@ const Intro = () => {
         let top = window.scrollY;
         let offset = s.offsetTop;
         let height = s.offsetHeight;
-        console.log(top >= offset && top < offset + height);
 
-        const sectionId = s.getAttribute('id');
+        const sectionId = s.getAttribute("id");
         if (
           sectionId === "contactSection" &&
           top + window.innerHeight >= s.offsetTop
@@ -111,13 +110,13 @@ const Intro = () => {
           });
         }
       });
-    }
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [links]);
 
   return (

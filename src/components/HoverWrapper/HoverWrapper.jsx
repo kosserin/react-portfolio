@@ -26,20 +26,22 @@ const StyledWrapper = styled.a`
     border-radius: 8px;
   }
 
-  &:hover {
-    &::before {
-      transition: all 250ms ease-in;
-      background-color: rgba(255, 255, 255, 0.03);
-    }
-
-    div div {
-      span {
-        color: var(--chip-txt);
+  @media screen and (min-width: 1080px) {
+    &:hover {
+      &::before {
+        transition: all 250ms ease-in;
+        background-color: rgba(255, 255, 255, 0.03);
       }
 
-      svg path {
-        transform: translate(4px, -4px);
-        stroke: var(--chip-txt);
+      div div {
+        span {
+          color: var(--chip-txt);
+        }
+
+        svg path {
+          transform: translate(4px, -4px);
+          stroke: var(--chip-txt);
+        }
       }
     }
   }
