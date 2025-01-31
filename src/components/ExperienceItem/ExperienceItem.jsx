@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Technologies from "../Technologies/Technologies";
 import HoverWrapper from "../HoverWrapper/HoverWrapper";
+import LinkIcon from "../LinkIcon/LinkIcon";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -14,19 +15,15 @@ const StyledContainer = styled.div`
 `;
 
 const StyledHeading = styled.div`
-  display: inline-block;
+  display: flex;
   margin-bottom: var(--spacing-1);
+  transform: translateY(-6px);
 
-  span,
-  svg path {
+  h3 {
     transition: all 250ms ease-in;
   }
 
-  span {
-    line-height: 1.3;
-  }
-
-  svg {
+  .link-icon {
     transform: translateY(4px);
     margin-left: 4px;
   }
@@ -34,7 +31,7 @@ const StyledHeading = styled.div`
 
 const StyledTime = styled.h6`
   @media screen and (min-width: 680px) {
-    min-width: 160px;
+    min-width: 170px;
   }
 `;
 
@@ -59,24 +56,10 @@ const ExperienceItem = ({
         </StyledTime>
         <div>
           <StyledHeading>
-            <span className="style-h3 color-white">
+            <h3 className="style-h3 color-white text-change-on-hover">
               {experience.companyName}
-            </span>
-            <svg
-              width="16"
-              height="17"
-              viewBox="0 0 16 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.66699 5.47925H11.3337M11.3337 5.47925V12.1459M11.3337 5.47925L4.66699 12.1459"
-                stroke="white"
-                strokeWidth="1.33333"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            </h3>
+            <LinkIcon />
           </StyledHeading>
           <h3 className="style-h3 color-light mb-3">{experience.role}</h3>
           <p className="style-small color-light mb-3">

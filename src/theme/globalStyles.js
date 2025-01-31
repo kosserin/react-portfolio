@@ -21,6 +21,8 @@ const GlobalStyle = createGlobalStyle`
   --spacing-8: calc(var(--base) * 8);
   --spacing-9: calc(var(--base) * 9);
   --spacing-10: calc(var(--base) * 10);
+  --spacing-11: calc(var(--base) * 11);
+  --spacing-12: calc(var(--base) * 12);
 }
 
 * {
@@ -41,52 +43,52 @@ body {
 // TYPOGRAPHY
 
   .style-h1 {
-    font-size: 38px;
+    font-size: 2.375rem;
     font-weight: 600;
 
     @media screen and (min-width: 1080px) {
-      font-size: 48px;
+      font-size: 4rem;
     }
   }
 
   .style-h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 
     @media screen and (min-width: 1080px) {
-      font-size: 20px;
+      font-size: 1.85rem;
     }
   }
 
 .style-h3 {
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 500;
     line-height: 1;
 }
 
 .style-h4 {
-    font-size: 14px;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5;
 }
 
 .style-h5 {
-    font-size: 12px;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.2px;
     text-transform: uppercase;
 }
-
+    
 .style-body {
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.6;
 }
 
 
 .style-body__link {
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 500;
     text-decoration: none;
 
@@ -97,24 +99,24 @@ body {
 }
 
 .style-small {
-    font-size: 14px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.6;
 }
 
 .style-button {
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
 .style-chip {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1;
 }
 
 .style-nav__link {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1;
     letter-spacing: 1.4px;

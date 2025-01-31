@@ -30,8 +30,9 @@ const StyledWrapper = styled.div`
 
   @media screen and (min-width: 1080px) {
     padding-top: 0;
-    max-width: 1280px;
-    gap: var(--spacing-10);
+    padding-inline: 2rem;
+    gap: var(--spacing-1);
+    max-width: 1440px;
     margin-inline: auto;
     flex-direction: row;
     justify-content: space-between;
@@ -42,10 +43,10 @@ const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   padding-bottom: var(--spacing-7);
-
+  
   @media screen and (min-width: 1080px) {
+    width: 52%;
     padding-bottom: 120px;
-    max-width: 600px;
   }
 `;
 

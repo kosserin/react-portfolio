@@ -7,13 +7,14 @@ import ProjectItem from "../ProjectItem/ProjectItem";
 
 const StyledSection = styled.section`
   padding-top: var(--spacing-10);
+  padding-bottom: var(--spacing-10);
 `;
 
 const StyledProjects = styled.div`
   margin-top: var(--spacing-2);
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: var(--spacing-12);
 `;
 
 const Projects = () => {

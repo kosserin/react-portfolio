@@ -19,10 +19,10 @@ const StyledWrapper = styled.a`
     z-index: -1;
     position: absolute;
     content: "";
-    top: -16px;
-    left: -16px;
-    right: -16px;
-    bottom: -16px;
+    top: -32px;
+    left: -32px;
+    right: -32px;
+    bottom: -32px;
     border-radius: 8px;
   }
 
@@ -33,15 +33,16 @@ const StyledWrapper = styled.a`
         background-color: rgba(255, 255, 255, 0.03);
       }
 
-      div div {
-        span {
-          color: var(--chip-txt);
-        }
+      .link-icon {
+        transform: translate(2px, -2px);
+      }
 
-        svg path {
-          transform: translate(4px, -4px);
-          stroke: var(--chip-txt);
-        }
+      .link-icon path {
+        stroke: var(--chip-txt);
+      }
+
+      .text-change-on-hover {
+        color: var(--chip-txt);
       }
     }
   }

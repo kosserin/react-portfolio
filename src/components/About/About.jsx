@@ -7,7 +7,7 @@ const StyledSection = styled.section`
   padding-top: var(--spacing-7);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-2);
+  gap: var(--spacing-4);
 
   @media screen and (min-width: 1080px) {
     padding-top: 120px;
@@ -15,6 +15,7 @@ const StyledSection = styled.section`
 
   p {
     color: var(--light);
+    line-height: 1.8;
   }
 `;
 
@@ -28,7 +29,7 @@ const Technologies = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 4px;
+    gap: var(--spacing-1);
 
     img {
       height: 48px;
@@ -41,15 +42,15 @@ const About = () => {
     <StyledSection id="aboutSection">
       <SectionTitle name={"About"} />
       <p className="style-body">
-        Ever since childhood, my passion for computers ignited by gaming has
-        been the driving force behind my journey into software development. It
-        was during high school when I delved into a project using C++ Builder
-        that my enduring fascination with user interface design was sparked.
+        I'm a passionate developer with experience in building scalable,
+        user-friendly applications that follows best patterns and practices. I
+        always thrive for more and keep pushing my limits to create experiences
+        that are not only visually appealing but also highly performant and
+        accessible.
       </p>
 
       <p className="style-body">
-        Fast-forward to today, I'm motivated by the challenge of providing
-        customers with exceptional user interfaces at{" "}
+        I'm currently a Medior Angular Developer at{" "}
         <a
           href="https://www.neon-free.ch/en/"
           target="_blank"
@@ -57,20 +58,30 @@ const About = () => {
           className="style-body__link color-white"
         >
           Neon
-        </a>{" "}
-        crafting well-written and functional code that follows the best
-        practices. I've had the privilege of building{" "}
-        <a
-          href="https://sfdespot.com/"
-          target="_blank"
-          rel="noreferrer"
-          className="style-body__link color-white"
-        >
-          a website for local business
-        </a>{" "}
-        and convert designs into code at Upwork.
+        </a>
+        , a Swiss fintech startup, where I develop a mobile application serving
+        over 200,000 users. What began as an interest in gaming evolved into a
+        passion for computers, user interactivity, and graphics. Originally
+        trained as a Mechanical Engineer, I transitioned into software
+        engineering to merge my love for technology and design.
       </p>
-      <p className="style-body mb-2">Technologies I’m strong with:</p>
+
+      <p className="style-body">
+        With a professional background in Angular and Ionic development, I
+        specialize in crafting responsive and performant applications. I have
+        experience working with Capacitor, Cordova, and other modern web
+        technologies to bridge the gap between web and mobile. I'm also
+        proficient in React and React Native and have worked on many projects
+        using these technologies. I worked on multiple projects for local
+        businesses and conversions of designs into code at Upwork.
+      </p>
+
+      <p className="style-body">
+        In my free time, you'll often find me at the gym, playing futsal,
+        spending time with my fiancée, or exploring something new to learn.
+      </p>
+
+      <p className="style-body mb-2">Technologies I'm strong with:</p>
       <Technologies>
         {TECHNOLOGIES.map((t, i) => (
           <div key={`technology-${i}`}>
