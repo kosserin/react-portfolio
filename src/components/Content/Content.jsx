@@ -32,7 +32,7 @@ const StyledWrapper = styled.div`
     padding-top: 0;
     padding-inline: 2rem;
     gap: var(--spacing-1);
-    max-width: 1440px;
+    max-width: 1280px;
     margin-inline: auto;
     flex-direction: row;
     justify-content: space-between;
