@@ -22,7 +22,7 @@ const StyledSection = styled.section`
 const Technologies = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: var(--spacing-4);
 
   div {
     display: flex;
@@ -32,7 +32,7 @@ const Technologies = styled.div`
     gap: var(--spacing-1);
 
     img {
-      height: 48px;
+      height: 56px;
     }
   }
 `;
