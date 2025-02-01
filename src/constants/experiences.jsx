@@ -5,7 +5,7 @@ export const EXPERIENCES = [
     companyName: "Holycode (Neon)",
     role: "Medior Angular Developer",
     description:
-      "Develop and maintain core features of Neon's frontend, ensuring scalability and performance. Upgrade Angular and Ionic versions. Migrate the app from Cordova to Capacitor, including migrating in-house Cordova plugins and developing a custom Capacitor plugin for scanning. Collaborate on API design, frontend capabilities, and data structure for seamless integration. Oversee releases and deployments, managing the end-to-end release process. Handle application builds and deployments to app stores.",
+      "Build and maintain core features of Neon's frontend, ensuring scalability and performance. Upgrade Angular and Ionic versions. Migrate the app from Cordova to Capacitor, including migrating in-house Cordova plugins and developing a custom Capacitor plugin for scanning. Collaborate on API design, frontend capabilities, and data structure. Oversee releases and deployments, managing the end-to-end release process.",
     technologies: [
       "Angular",
       "Ionic",
@@ -41,7 +41,7 @@ export const EXPERIENCES = [
     companyName: "Holycode (Neon)",
     role: "Angular Developer Internship",
     description:
-      "Gained hands-on experience with Angular, Ionic, and Cordova, and mastered Jira, Bitbucket, and Git. Migrated application from moment.js to the date-fns library optimizing performance and reducing bundle size. Documented migration from Cordova to Capacitor, creating and testing plugin alternatives with a functional demo project",
+      "Gained hands-on experience with Angular, Ionic, and Cordova, gained comprehensive experience with Jira, Bitbucket, and Git. Migrated application from moment.js to the date-fns library. Documented migration from Cordova to Capacitor, creating and testing plugin alternatives with a functional demo project",
     technologies: [
       "Angular",
       "Ionic",

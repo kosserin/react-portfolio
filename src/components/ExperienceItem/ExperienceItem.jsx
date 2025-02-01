@@ -16,7 +16,7 @@ const StyledContainer = styled.div`
 
 const StyledHeading = styled.div`
   display: flex;
-  margin-bottom: var(--spacing-1);
+  margin-bottom: var(--spacing-0.5);
   transform: translateY(-3px);
 
   h3 {
@@ -57,11 +57,11 @@ const ExperienceItem = ({
         <div>
           <StyledHeading>
             <h3 className="style-h3 color-white text-change-on-hover">
-              {experience.companyName}
+              {experience.role}
             </h3>
             <LinkIcon />
           </StyledHeading>
-          <h3 className="style-h3 color-light mb-3">{experience.role}</h3>
+          <h3 className="style-h4 color-light mb-3">{experience.companyName}</h3>
           <p className="style-small color-light mb-3">
             {experience.description}
           </p>

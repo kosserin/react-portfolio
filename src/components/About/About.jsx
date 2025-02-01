@@ -22,7 +22,7 @@ const StyledSection = styled.section`
 const Technologies = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-3);
+  gap: var(--spacing-4);
 
   div {
     display: flex;
@@ -42,15 +42,14 @@ const About = () => {
     <StyledSection id="aboutSection">
       <SectionTitle name={"About"} />
       <p className="style-body">
-        I'm a passionate developer with experience in building scalable,
-        user-friendly applications that follows best patterns and practices. I
-        always thrive for more and keep pushing my limits to create experiences
-        that are not only visually appealing but also highly performant and
-        accessible.
+        Problem solver, code craftsman, and lifelong learner with a unique
+        engineering background. I thrive on pushing boundaries to create
+        experiences that are not only visually appealing but highly performant
+        and accessible.
       </p>
 
       <p className="style-body">
-        I'm currently a Medior Angular Developer at{" "}
+        Currently, I'm an Angular Developer at{" "}
         <a
           href="https://www.neon-free.ch/en/"
           target="_blank"
@@ -59,21 +58,15 @@ const About = () => {
         >
           Neon
         </a>
-        , a Swiss fintech startup, where I develop a mobile application serving
-        over 200,000 users. What began as an interest in gaming evolved into a
-        passion for computers, user interactivity, and graphics. Originally
-        trained as a Mechanical Engineer, I transitioned into software
-        engineering to merge my love for technology and design.
-      </p>
-
-      <p className="style-body">
-        With a professional background in Angular and Ionic development, I
-        specialize in crafting responsive and performant applications. I have
-        experience working with Capacitor, Cordova, and other modern web
-        technologies to bridge the gap between web and mobile. I'm also
-        proficient in React and React Native and have worked on many projects
-        using these technologies. I worked on multiple projects for local
-        businesses and conversions of designs into code at Upwork.
+        , a Swiss fintech startup, where I work on a hybrid application serving
+        over 200,000 users. With a professional background in Angular and Ionic
+        development I became proficient in crafting high-end scalable,
+        performant and user-centric applications. I have experience working with
+        Capacitor, Cordova, and other modern web technologies to bridge the gap
+        between web and mobile. I'm also proficient in React and React Native
+        and have worked on many projects using these technologies. I worked on
+        multiple projects for local businesses and conversions of designs into
+        code at Upwork.
       </p>
 
       <p className="style-body">
@@ -86,7 +79,7 @@ const About = () => {
         {TECHNOLOGIES.map((t, i) => (
           <div key={`technology-${i}`}>
             <img src={t.imageSource} alt="" />
-            <p className="style-body color-white">{t.name}</p>
+            <p className="style-small color-white">{t.name}</p>
           </div>
         ))}
       </Technologies>

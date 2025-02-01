@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
   // spacings
   --base: 8px;
+  --spacing-0.5: calc(var(--base) * 0.5);
   --spacing-1: var(--base);
   --spacing-2: calc(var(--base) * 1.5);
   --spacing-3: calc(var(--base) * 2);
@@ -62,13 +63,13 @@ body {
 
 .style-h3 {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1;
 }
 
 .style-h4 {
-    font-size: 1.125rem;
-    font-weight: 500;
+    font-size: 0.875rem;
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -82,7 +83,7 @@ body {
     
 .style-body {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.6;
 }
 
@@ -99,8 +100,8 @@ body {
 }
 
 .style-small {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 0.875rem;
+    font-weight: 300;
     line-height: 1.6;
 }
 
@@ -121,6 +122,24 @@ body {
     line-height: 1;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+}
+
+.style-h1,
+.style-h2,
+.style-h3,
+.style-h4,
+.style-h5,
+.style-h6,
+.style-body,
+.style-body__link,
+.style-small,
+.style-button,
+.style-chip,
+.style-nav__link {
+    &::selection {
+    color: var(--chip-bg);
+    background: var(--light);
+    }
 }
 
 // COLORS
