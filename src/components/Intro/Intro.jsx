@@ -84,42 +84,53 @@ const StyledSocials = styled.div`
 
 const Intro = () => {
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    setTimeout(() => {
-      const navLinks = document.querySelectorAll("header div nav ul li a");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const index = Array.from(sections).indexOf(entry.target);
-              navLinks.forEach((link, i) => {
-                if (i === index) {
-                  link.classList.add("active");
-                } else {
-                  link.classList.remove("active");
-                }
-              });
-            }
-          });
-        },
-        {
-          root: null,
-          rootMargin: "0px",
-          threshold: 0,
-        }
-      );
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0,
+    };
 
-      sections.forEach((section) => {
-        observer.observe(section);
+    let visibleSections = [];
+
+    const intersectionCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          visibleSections = [...visibleSections, entry];
+        } else {
+          visibleSections = visibleSections.filter(
+            (x) => x.target.id !== entry.target.id
+          );
+        }
       });
 
-      return () => {
-        sections.forEach((section) => {
-          observer.unobserve(section);
+      if (visibleSections.length > 0) {
+        const mostVisible = visibleSections.reduce((max, current) => {
+          return current.intersectionRatio > max.intersectionRatio
+            ? current
+            : max;
         });
-      };
-    }, 0);
+
+        setActiveLink(mostVisible.target.id);
+      }
+    };
+
+    const observer = new IntersectionObserver(intersectionCallback, options);
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
   }, []);
+
+  const setActiveLink = (sectionId) => {
+    const links = document.querySelectorAll("nav a");
+    links.forEach((link) => {
+      const href = link.getAttribute("href").substring(1);
+      link.classList.toggle("active", href === sectionId);
+    });
+  };
 
   return (
     <StyledIntro>
@@ -143,7 +154,7 @@ const Intro = () => {
           <nav>
             <StyledList>
               <li>
-                <StyledItemLink href="#aboutSection" className="active">
+                <StyledItemLink href="#aboutSection">
                   <div className="line"></div>
                   <span className="style-nav__link color-light">About</span>
                 </StyledItemLink>
