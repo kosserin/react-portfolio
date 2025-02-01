@@ -13,7 +13,7 @@ const StyledSection = styled.section`
 
 const Contact = () => {
   return (
-    <StyledSection id="contactSection">
+    <StyledSection id="contact">
       <SectionTitle name={"Contact"} />
       <p className="style-body color-light mb-1">
         Have a project you think I could be a good fit? Let’s talk.

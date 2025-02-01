@@ -30,7 +30,7 @@ const Experience = () => {
   };
 
   return (
-    <StyledSection id="experienceSection">
+    <StyledSection id="experience">
       <SectionTitle name={"Experience"} />
       <StyledExperiences className="mb-6">
         {EXPERIENCES.map((experience, i) => (

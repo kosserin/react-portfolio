@@ -29,7 +29,7 @@ const Projects = () => {
   };
 
   return (
-    <StyledSection id="projectsSection">
+    <StyledSection id="projects">
       <SectionTitle name={"Projects"} />
       <StyledProjects className="mb-6">
         {PROJECTS.map((project, i) => (

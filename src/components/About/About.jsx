@@ -39,7 +39,7 @@ const Technologies = styled.div`
 
 const About = () => {
   return (
-    <StyledSection id="aboutSection">
+    <StyledSection id="about">
       <SectionTitle name={"About"} />
       <p className="style-body">
         Problem solver, code craftsman, and lifelong learner with a unique

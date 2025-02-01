@@ -190,13 +190,13 @@ const Intro = () => {
           <nav>
             <StyledList>
               <li>
-                <StyledItemLink href="#aboutSection">
+                <StyledItemLink href="#about">
                   <div className="line"></div>
                   <span className="style-nav__link color-light">About</span>
                 </StyledItemLink>
               </li>
               <li>
-                <StyledItemLink href="#experienceSection">
+                <StyledItemLink href="#experience">
                   <div className="line"></div>
                   <span className="style-nav__link color-light">
                     Experience
@@ -204,13 +204,13 @@ const Intro = () => {
                 </StyledItemLink>
               </li>
               <li>
-                <StyledItemLink href="#projectsSection">
+                <StyledItemLink href="#projects">
                   <div className="line"></div>
                   <span className="style-nav__link color-light">Projects</span>
                 </StyledItemLink>
               </li>
               <li>
-                <StyledItemLink href="#contactSection">
+                <StyledItemLink href="#contact">
                   <div className="line"></div>
                   <span className="style-nav__link color-light">Contact</span>
                 </StyledItemLink>
