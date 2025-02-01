@@ -30,7 +30,7 @@ const StyledWrapper = styled.div`
 
   @media screen and (min-width: 1080px) {
     padding-top: 0;
-    padding-inline: 2rem;
+    padding-inline: 3rem;
     gap: var(--spacing-1);
     max-width: 1280px;
     margin-inline: auto;
@@ -43,7 +43,7 @@ const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   padding-bottom: var(--spacing-7);
-  
+
   @media screen and (min-width: 1080px) {
     width: 52%;
     padding-bottom: 120px;

@@ -29,13 +29,17 @@ const StyledLink = styled.a`
 `;
 
 const StyledList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  list-style: none;
+  display: none;
 
-  li a {
-    padding-top: var(--spacing-2);
-    padding-bottom: var(--spacing-2);
+  @media screen and (min-width: 1080px) {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    li a {
+      padding-top: var(--spacing-2);
+      padding-bottom: var(--spacing-2);
+    }
   }
 `;
 
@@ -84,43 +88,75 @@ const StyledSocials = styled.div`
 
 const Intro = () => {
   useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0,
+    let observer;
+
+    const clearObserver = () => {
+      console.log("clearObserver");
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => observer.unobserve(section));
+      observer = undefined;
     };
 
-    let visibleSections = [];
+    const handleResize = () => {
+      console.log("handleResize");
 
-    const intersectionCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          visibleSections = [...visibleSections, entry];
-        } else {
-          visibleSections = visibleSections.filter(
-            (x) => x.target.id !== entry.target.id
-          );
+      if (window.innerWidth >= 1080) {
+        console.log("bigger or equal");
+
+        if (!observer) {
+          initializeObserver();
         }
-      });
-
-      if (visibleSections.length > 0) {
-        const mostVisible = visibleSections.reduce((max, current) => {
-          return current.intersectionRatio > max.intersectionRatio
-            ? current
-            : max;
-        });
-
-        setActiveLink(mostVisible.target.id);
+      } else {
+        console.log("less");
+        if (observer) {
+          clearObserver();
+        }
       }
     };
 
-    const observer = new IntersectionObserver(intersectionCallback, options);
-    const sections = document.querySelectorAll("section");
+    const initializeObserver = () => {
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0,
+      };
 
-    sections.forEach((section) => observer.observe(section));
+      let visibleSections = [];
+
+      const intersectionCallback = (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleSections = [...visibleSections, entry];
+          } else {
+            visibleSections = visibleSections.filter(
+              (x) => x.target.id !== entry.target.id
+            );
+          }
+        });
+
+        if (visibleSections.length > 0) {
+          const mostVisible = visibleSections.reduce((max, current) => {
+            return current.intersectionRatio > max.intersectionRatio
+              ? current
+              : max;
+          });
+
+          setActiveLink(mostVisible.target.id);
+        }
+      };
+
+      observer = new IntersectionObserver(intersectionCallback, options);
+      const sections = document.querySelectorAll("section");
+
+      sections.forEach((section) => observer.observe(section));
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
 
     return () => {
-      sections.forEach((section) => observer.unobserve(section));
+      clearObserver();
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
