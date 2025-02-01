@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledChip = styled.div`
-  padding: 12px 16px;
+  padding: 10px 14px;
   background-color: var(--chip-bg);
   border: none;
   outline: none;

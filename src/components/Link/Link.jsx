@@ -9,7 +9,8 @@ const StyledLink = styled.a`
   align-items: flex-end;
 
   .link-icon {
-    margin-left: 4px;
+    margin-left: 2px;
+    transform: translateY(2px);
   }
 
   span {
@@ -21,11 +22,11 @@ const StyledLink = styled.a`
       color: var(--chip-txt);
     }
 
-    svg {
+    .link-icon {
       transform: translate(4px, -4px);
     }
 
-    svg path {
+    .link-icon path {
       stroke: var(--chip-txt);
     }
   }

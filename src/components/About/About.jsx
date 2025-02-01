@@ -7,7 +7,7 @@ const StyledSection = styled.section`
   padding-top: var(--spacing-7);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-4);
+  gap: var(--spacing-3);
 
   @media screen and (min-width: 1080px) {
     padding-top: 120px;
@@ -22,7 +22,7 @@ const StyledSection = styled.section`
 const Technologies = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-4);
+  gap: var(--spacing-3);
 
   div {
     display: flex;
@@ -32,7 +32,7 @@ const Technologies = styled.div`
     gap: var(--spacing-1);
 
     img {
-      height: 56px;
+      height: 48px;
     }
   }
 `;
@@ -86,7 +86,7 @@ const About = () => {
         {TECHNOLOGIES.map((t, i) => (
           <div key={`technology-${i}`}>
             <img src={t.imageSource} alt="" />
-            <p className="style-h4 color-white">{t.name}</p>
+            <p className="style-body color-white">{t.name}</p>
           </div>
         ))}
       </Technologies>

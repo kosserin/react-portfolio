@@ -17,15 +17,15 @@ const StyledContainer = styled.div`
 const StyledHeading = styled.div`
   display: flex;
   margin-bottom: var(--spacing-1);
-  transform: translateY(-6px);
+  transform: translateY(-3px);
 
   h3 {
     transition: all 250ms ease-in;
   }
 
   .link-icon {
-    transform: translateY(4px);
-    margin-left: 4px;
+    transform: translateY(2px);
+    margin-left: 2px;
   }
 `;
 

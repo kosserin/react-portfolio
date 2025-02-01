@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   --white: #DBDBDB;
   --light: #9081a0;
   --purple-bg: #150B21;
-  --chip-bg: #322147;
+  --chip-bg: #3d2b53;
   --chip-txt: #B988F4;
 
   // spacings
@@ -47,7 +47,7 @@ body {
     font-weight: 600;
 
     @media screen and (min-width: 1080px) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 
@@ -56,12 +56,12 @@ body {
     font-weight: 500;
 
     @media screen and (min-width: 1080px) {
-      font-size: 1.85rem;
+      font-size: 1.5rem;
     }
   }
 
 .style-h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1;
 }
@@ -73,7 +73,7 @@ body {
 }
 
 .style-h5 {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.2px;
@@ -81,15 +81,15 @@ body {
 }
     
 .style-body {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
 }
 
 
 .style-body__link {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     text-decoration: none;
 
     &:hover {
@@ -99,7 +99,7 @@ body {
 }
 
 .style-small {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
 }
@@ -110,13 +110,13 @@ body {
 }
 
 .style-chip {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 500;
     line-height: 1;
 }
 
 .style-nav__link {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 600;
     line-height: 1;
     letter-spacing: 1.4px;

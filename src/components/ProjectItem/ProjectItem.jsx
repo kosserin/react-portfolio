@@ -19,15 +19,15 @@ const StyledContainer = styled.div`
 const StyledHeading = styled.div`
   display: flex;
   margin-bottom: var(--spacing-1);
-  transform: translateY(-6px);
+  transform: translateY(-3px);
 
   h3 {
     transition: all 250ms ease-in;
   }
 
   .link-icon {
-    transform: translateY(4px);
-    margin-left: 4px;
+    transform: translateY(2px);
+    margin-left: 2px;
   }
 `;
 
@@ -68,7 +68,9 @@ const ProjectItem = ({
       <StyledContainer>
         <StyledProjectDetails>
           <StyledHeading>
-            <h3 className="style-h3 color-white">{project.title}</h3>
+            <h3 className="style-h3 color-white text-change-on-hover">
+              {project.title}
+            </h3>
             <LinkIcon />
           </StyledHeading>
           <p className="style-small color-light mb-3">{project.description}</p>

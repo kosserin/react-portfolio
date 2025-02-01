@@ -34,7 +34,7 @@ const StyledWrapper = styled.a`
       }
 
       .link-icon {
-        transform: translate(2px, -2px);
+        transform: translate(4px, -4px);
       }
 
       .link-icon path {
