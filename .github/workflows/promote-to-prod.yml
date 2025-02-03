@@ -3,22 +3,29 @@ name: Promote Preview to Production
 on:
   workflow_dispatch:
     inputs:
-      channel_id:
+      preview_channel:
         description: 'Preview channel to promote'
         required: true
-        default: 'preview'
+        type: string
 
 jobs:
-  promote_preview:
+  deploy-to-production:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Deploy to Firebase Production Channel
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy to Production
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          revertOnFailure: true
+          channelId: ${{ github.event.inputs.preview_channel }}
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_PORTFOLIO_FEF74 }}'
-          channelId: '${{ github.event.inputs.channel_id }}'
-          projectId: react-portfolio-fef74
+          projectId: your-firebase-project-id
