@@ -1,0 +1,16 @@
+name: Promote to Production
+
+on:
+  workflow_dispatch  # Allows you to manually trigger this workflow
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Production
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_PORTFOLIO_FEF74 }}'
+          channelId: live
+          projectId: react-portfolio-fef74
