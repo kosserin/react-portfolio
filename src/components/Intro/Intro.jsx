@@ -177,7 +177,7 @@ const Intro = () => {
         <h2 className="style-h2 color-white mb-4">Front End Engineer</h2>
         <p className="style-body color-light mb-5">
           I build web and hybrid apps that feel smooth, intuitive, and easy to
-          use.
+          use
         </p>
         <MediaQuery query="(max-device-width: 1080px)">
           <Link
