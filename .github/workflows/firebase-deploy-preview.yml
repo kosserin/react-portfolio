@@ -1,0 +1,32 @@
+name: Deploy to Firebase Preview on Push to Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Ensure this matches your local Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Firebase Preview Channel
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_PORTFOLIO_FEF74 }}'
+          channelId: preview  # Change from "live" to "preview"
+          projectId: react-portfolio-fef74
