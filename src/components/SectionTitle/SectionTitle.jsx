@@ -5,7 +5,7 @@ const StyledTitle = styled.h3`
   color: var(--white);
   padding: var(--spacing-3) 5vw;
   position: sticky;
-  top: 0;
+  top: env(safe-area-inset-top, 0);
   left: 0;
   margin-inline: -5vw;
   z-index: 2;
