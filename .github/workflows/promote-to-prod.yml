@@ -1,16 +1,24 @@
-name: Promote to Production
+name: Promote Preview to Production
 
 on:
-  workflow_dispatch  # Allows you to manually trigger this workflow
+  workflow_dispatch:
+    inputs:
+      channel_id:
+        description: 'Preview channel to promote'
+        required: true
+        default: 'preview'
 
 jobs:
-  promote:
+  promote_preview:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to Production
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to Firebase Production Channel
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_PORTFOLIO_FEF74 }}'
-          channelId: live
+          channelId: '${{ github.event.inputs.channel_id }}'
           projectId: react-portfolio-fef74
