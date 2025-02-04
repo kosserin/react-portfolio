@@ -91,23 +91,17 @@ const Intro = () => {
     let observer;
 
     const clearObserver = () => {
-      console.log("clearObserver");
       const sections = document.querySelectorAll("section");
       sections.forEach((section) => observer.unobserve(section));
       observer = undefined;
     };
 
     const handleResize = () => {
-      console.log("handleResize");
-
       if (window.innerWidth >= 1080) {
-        console.log("bigger or equal");
-
         if (!observer) {
           initializeObserver();
         }
       } else {
-        console.log("less");
         if (observer) {
           clearObserver();
         }
@@ -118,28 +112,27 @@ const Intro = () => {
       const options = {
         root: null,
         rootMargin: "0px",
-        threshold: 0,
+        threshold: Array.from({ length: 11 }, (_, i) => i * 0.1),
       };
 
-      let visibleSections = [];
+      let visibleSections = new Map();
 
       const intersectionCallback = (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            visibleSections = [...visibleSections, entry];
+            visibleSections.set(entry.target.id, entry);
           } else {
-            visibleSections = visibleSections.filter(
-              (x) => x.target.id !== entry.target.id
-            );
+            visibleSections.delete(entry.target.id);
           }
         });
 
-        if (visibleSections.length > 0) {
-          const mostVisible = visibleSections.reduce((max, current) => {
-            return current.intersectionRatio > max.intersectionRatio
-              ? current
-              : max;
-          });
+        if (visibleSections.size > 0) {
+          const mostVisible = [...visibleSections.values()].reduce(
+            (max, current) =>
+              current.intersectionRatio > max.intersectionRatio ? current : max
+          );
+
+          console.log(mostVisible);
 
           setActiveLink(mostVisible.target.id);
         }
