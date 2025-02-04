@@ -164,7 +164,7 @@ const Intro = () => {
   return (
     <StyledIntro>
       <div>
-        <StyledLink href="" className="style-h1 color-white mb-2">
+        <StyledLink href="#" className="style-h1 color-white mb-2">
           Andrija Kostic
         </StyledLink>
         <h2 className="style-h2 color-white mb-4">Front End Engineer</h2>
