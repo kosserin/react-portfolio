@@ -119,6 +119,10 @@ transition: all 250ms ease-out;
     height: 100%;
     background: transparent;
     border-radius: 3px;
+
+    span {
+        display: none;
+    }
 }
 
 `

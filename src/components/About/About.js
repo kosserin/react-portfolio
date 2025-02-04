@@ -38,7 +38,7 @@ const About = () => {
     </div>
     <div className='about-image'>
         <div className='border'></div>
-        <img src={myPhoto} alt="my photo" />
+        <img src={myPhoto} alt="" />
         <div className='color-overlay'></div>
     </div>
     </div>

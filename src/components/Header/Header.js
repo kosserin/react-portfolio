@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <HeaderStyled id="header-section">
-    <a title='logo' href="#"><svg id="loading" width="80" height="129" viewBox="0 0 80 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a title='logo' href="/" onClick={(e) => e.preventDefault()}><svg id="loading" width="80" height="129" viewBox="0 0 80 129" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path className='path' d="M2.5 121L44 8.5L75 121L22.5 74.5L75 34" stroke="#E7DEEE" strokeWidth="5"/>
         </svg></a>
     <nav>

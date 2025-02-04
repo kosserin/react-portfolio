@@ -6,7 +6,9 @@ import { OtherProjectItemStyled } from './OtherProjectItem.styled';
 const OtherProjectItem = (props) => {
   return (
     <OtherProjectItemStyled className='other-project__item'>
-    <a title='background link' href={props.previewLink ? props.previewLink : props.githubLink} target="_blank" rel="noreferrer" id={'other-project' + props.id} className='background-link'></a>
+    <a title='background link' href={props.previewLink ? props.previewLink : props.githubLink} target="_blank" rel="noreferrer" id={'other-project' + props.id} className='background-link'>
+      <span>-</span>
+    </a>
     <div className='other-project'>
     <FaFolder />
     <div className='links'>
