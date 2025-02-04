@@ -13,6 +13,7 @@ export default function Logo() {
       href="https://github.com/kosserin"
       target="_blank"
       rel="noreferrer"
+      aria-label="Link to GitHub profile"
     >
       <svg
         width="28"

@@ -76,7 +76,7 @@ const ProjectItem = ({
           <p className="style-small color-light mb-3">{project.description}</p>
           <Technologies technologies={project.technologies} />
         </StyledProjectDetails>
-        <StyledProjectImage src={project.imageSource} alt="" />
+        <StyledProjectImage src={project.imageSource} alt="" loading="lazy" />
       </StyledContainer>
     </HoverWrapper>
   );

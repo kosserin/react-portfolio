@@ -29,7 +29,7 @@ const StyledHeading = styled.div`
   }
 `;
 
-const StyledTime = styled.h6`
+const StyledTime = styled.h5`
   @media screen and (min-width: 680px) {
     min-width: 170px;
   }
@@ -61,7 +61,7 @@ const ExperienceItem = ({
             </h3>
             <LinkIcon />
           </StyledHeading>
-          <h3 className="style-h4 color-light mb-3">{experience.companyName}</h3>
+          <h4 className="style-h4 color-light mb-3">{experience.companyName}</h4>
           <p className="style-small color-light mb-3">
             {experience.description}
           </p>

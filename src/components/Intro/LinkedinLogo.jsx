@@ -12,6 +12,7 @@ export default function Logo() {
       href="https://www.linkedin.com/in/kosserin/"
       target="_blank"
       rel="noreferrer"
+      aria-label="Link to LinkedIn profile"
     >
       <svg
         width="28"
