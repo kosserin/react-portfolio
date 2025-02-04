@@ -169,8 +169,8 @@ const Intro = () => {
         </StyledLink>
         <h2 className="style-h2 color-white mb-4">Front End Engineer</h2>
         <p className="style-body color-light mb-5">
-          I build web and hybrid apps that feel smooth, intuitive, and easy to
-          use.
+          I build high-performance, accessible, and maintainable web and hybrid
+          apps with a seamless user experience.
         </p>
         <MediaQuery query="(max-device-width: 1080px)">
           <Link
