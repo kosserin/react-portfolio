@@ -5,7 +5,7 @@ export const EXPERIENCES = [
     companyName: "Holycode (Neon)",
     role: "Medior Angular Developer",
     description:
-      "Build and maintain core features of Neon's frontend, ensuring scalability and performance. Upgrade Angular and Ionic versions. Migrate the app from Cordova to Capacitor, including migrating in-house Cordova plugins and developing a custom Capacitor plugin for scanning. Collaborate on API design, frontend capabilities, and data structure. Oversee releases and deployments, managing the end-to-end release process.",
+      "Refactored the transaction details screen from scratch, adding features like transaction history, tagged transactions, statistics, and category insights. Contributed to a major migration project, transitioning the app from Cordova to Capacitor, including rewriting in-house Cordova plugins and developing a custom Capacitor plugin for IBAN scanning. Took part in Angular and Ionic upgrade, migrating from Angular v14 to v18 and Ionic v6 to v8 where my role was to ensure ion-slides are replaced with SwiperJS Web API and there are no bundle issues. Managed the end-to-end release process, including building for app stores, handling deployments, and ensuring smooth releases.",
     technologies: [
       "Angular",
       "Ionic",
@@ -23,7 +23,7 @@ export const EXPERIENCES = [
     companyName: "Holycode (Neon)",
     role: "Junior Angular Developer",
     description:
-      "Developed proficiency with Angular, Ionic, Cordova, TypeScript, HTML, and SCSS. Implemented scalable features such as the Explore tab and Investment Plan, used by tens of thousands of users. Collaborated with cross-functional teams to debug issues, implement designs, and support QA and backend processes. Initiated codebase refactorings, improving key components and documenting strategies for team-wide alignment.",
+      "Developed and maintained the trading feature of a Swiss-made investment platform, the app's most profitable feature, used by tens of thousands of users. Implemented key functionalities, including portfolio insights, live asset performance, buy/sell flow, and an explore section for discovering top-performing assets. Designed custom performance graphs using Highcharts and built an investment plan system for recurring asset purchases. Enhanced search functionality with advanced sorting and filtering options. Refactored keyboard handling into a centralized service for consistent UI behavior across the app. Standardized app headers by creating a base header component with extendable variations for different screens and documented its usage with all use-cases and possibilities. Developed unit and integration tests to ensure the reliability and stability of the trading feature.",
     technologies: [
       "Angular",
       "Ionic",
@@ -41,7 +41,7 @@ export const EXPERIENCES = [
     companyName: "Holycode (Neon)",
     role: "Angular Developer Internship",
     description:
-      "Gained hands-on experience with Angular, Ionic, and Cordova, gained comprehensive experience with Jira, Bitbucket, and Git. Migrated application from moment.js to the date-fns library. Documented migration from Cordova to Capacitor, creating and testing plugin alternatives with a functional demo project",
+      "Researched and documented the migration process from Cordova to Capacitor, identifying alternative plugins and testing their compatibility with our app. Developed a blank project from scratch, implementing authentication, authorization, transactions, and payment features similar to our main app. Optimized the app by replacing Moment.js with date-fns for better tree-shaking and reduced bundle size. Gained experience with Git, Jira, and Bitbucket, including resolving merge conflicts, writing tickets, and reviewing pull requests (PRs). Centralized status message logic into a single service, addressing all edge cases and preventing potential pitfalls in the app.",
     technologies: [
       "Angular",
       "Ionic",
