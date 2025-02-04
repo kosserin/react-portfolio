@@ -43,9 +43,9 @@ const About = () => {
       <SectionTitle name={"About"} />
       <p className="style-body">
         Problem solver, code craftsman, and lifelong learner with a unique
-        engineering background. I thrive on pushing boundaries to create
-        experiences that are not only visually appealing but highly performant
-        and accessible.
+        engineering background. With meticulous attention to details, I thrive
+        on pushing boundaries to create experiences that are not only visually
+        appealing but highly performant and accessible.
       </p>
 
       <p className="style-body">
