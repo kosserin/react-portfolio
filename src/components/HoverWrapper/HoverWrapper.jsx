@@ -15,20 +15,17 @@ const StyledWrapper = styled.a`
     opacity: 0.4;
   }
 
-  &::before {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    top: -32px;
-    left: -32px;
-    right: -32px;
-    bottom: -32px;
-    border-radius: 8px;
-  }
-
   @media screen and (min-width: 1080px) {
     &:hover {
       &::before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        top: -32px;
+        left: -32px;
+        right: -32px;
+        bottom: -32px;
+        border-radius: 8px;
         transition: all 250ms ease-in;
         background-color: rgba(255, 255, 255, 0.03);
       }
