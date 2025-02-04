@@ -1,8 +1,8 @@
-import flight from "../assets/projects/flight.png";
-import football from "../assets/projects/football.png";
-import audio from "../assets/projects/audio.png";
-import canal from "../assets/projects/canal.png";
-import deplace from "../assets/projects/deplace.png";
+import flight from "../assets/projects/flight.jpg";
+import football from "../assets/projects/football.jpg";
+import audio from "../assets/projects/audio.jpg";
+import canal from "../assets/projects/canal.jpg";
+import deplace from "../assets/projects/deplace.jpg";
 
 export const PROJECTS = [
   {
