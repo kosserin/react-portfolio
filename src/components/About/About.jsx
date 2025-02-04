@@ -42,10 +42,10 @@ const About = () => {
     <StyledSection id="about">
       <SectionTitle name={"About"} />
       <p className="style-body">
-        Problem solver, code craftsman, and lifelong learner with a unique
-        engineering background. With meticulous attention to details, I thrive
-        on pushing boundaries to create experiences that are not only visually
-        appealing but highly performant and accessible.
+        Problem solver, code craftsman, and lifelong learner with a strong
+        engineering mindset. I thrive on building high-performance, accessible,
+        and user-centric applications, paying attention to detail while pushing
+        boundaries to enhance user experiences.
       </p>
 
       <p className="style-body">
@@ -63,10 +63,10 @@ const About = () => {
         development I became proficient in crafting high-end scalable,
         performant and user-centric applications. I have experience working with
         Capacitor, Cordova, and other modern web technologies to bridge the gap
-        between web and mobile. I'm also proficient in React and React Native
-        and have worked on many projects using these technologies. I worked on
-        multiple projects for local businesses and conversions of designs into
-        code at Upwork.
+        between web and mobile. I also have experience with React and React
+        Native and have worked on projects using these technologies. I worked on
+        multiple projects for local businesses and freelance projects of
+        converting designs into code at Upwork.
       </p>
 
       <p className="style-body">
