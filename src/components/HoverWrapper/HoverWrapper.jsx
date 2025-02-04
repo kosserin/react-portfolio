@@ -62,7 +62,7 @@ const HoverWrapper = ({
     const halfWidth = width / 2;
     const halfHeight = height / 2;
 
-    const sensitivity = 5;
+    const sensitivity = 2;
     const maxRotation = 20;
     let rotationX = ((y - halfHeight) / halfHeight) * sensitivity;
     let rotationY = ((x - halfWidth) / halfWidth) * sensitivity;
