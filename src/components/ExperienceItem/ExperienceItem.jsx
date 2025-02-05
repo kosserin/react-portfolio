@@ -65,8 +65,8 @@ const ExperienceItem = ({
             {experience.companyName}
           </h4>
           <p className="style-small color-light mb-3">
-            {experience.list.map((item) => (
-              <span>
+            {experience.list.map((item, index) => (
+              <span key={index}>
                 {item}
                 <br />
               </span>
