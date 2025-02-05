@@ -132,8 +132,6 @@ const Intro = () => {
               current.intersectionRatio > max.intersectionRatio ? current : max
           );
 
-          console.log(mostVisible);
-
           setActiveLink(mostVisible.target.id);
         }
       };
