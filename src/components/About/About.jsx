@@ -91,7 +91,7 @@ const About = () => {
               alt="Neon logo"
               className="neon-logo"
               style={{
-                top: cursorPos.y + 24,
+                top: cursorPos.y + 32,
                 left: cursorPos.x,
                 transform: "translate(-50%, -50%)",
               }}
