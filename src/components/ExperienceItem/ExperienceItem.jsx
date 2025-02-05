@@ -29,7 +29,7 @@ const StyledHeading = styled.div`
   }
 `;
 
-const StyledTime = styled.h5`
+const StyledTime = styled.time`
   @media screen and (min-width: 680px) {
     min-width: 170px;
   }
