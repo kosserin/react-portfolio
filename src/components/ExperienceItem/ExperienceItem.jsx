@@ -61,9 +61,16 @@ const ExperienceItem = ({
             </h3>
             <LinkIcon />
           </StyledHeading>
-          <h4 className="style-h4 color-light mb-3">{experience.companyName}</h4>
+          <h4 className="style-h4 color-light mb-3">
+            {experience.companyName}
+          </h4>
           <p className="style-small color-light mb-3">
-            {experience.description}
+            {experience.list.map((item) => (
+              <span>
+                {item}
+                <br />
+              </span>
+            ))}
           </p>
           <Technologies technologies={experience.technologies} />
         </div>
