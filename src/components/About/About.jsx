@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { TECHNOLOGIES } from "../../constants/technologies";
 import styled from "styled-components";
+import neonLogo from "../../assets/neon-logo.svg";
 
 const StyledSection = styled.section`
   padding-top: var(--spacing-7);
@@ -16,6 +17,20 @@ const StyledSection = styled.section`
   p {
     color: var(--light);
     line-height: 1.8;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  .neon-cursor {
+    cursor: none;
+  }
+
+  .neon-logo {
+    position: fixed;
+    width: 36px;
+    height: 36px;
   }
 `;
 
@@ -38,6 +53,13 @@ const Technologies = styled.div`
 `;
 
 const About = () => {
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseMove = (e) => {
+    setCursorPos({ x: e.clientX, y: e.clientY });
+  };
+
   return (
     <StyledSection id="about">
       <SectionTitle name={"About"} />
@@ -50,14 +72,32 @@ const About = () => {
 
       <p className="style-body">
         Currently, I'm an Angular Developer at{" "}
-        <a
-          href="https://www.neon-free.ch/en/"
-          target="_blank"
-          rel="noreferrer"
-          className="style-body__link color-white"
-        >
-          Neon
-        </a>
+        <span className="relative">
+          <a
+            href="https://www.neon-free.ch/en/"
+            target="_blank"
+            rel="noreferrer"
+            className="style-body__link color-white relative neon-cursor"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+            onMouseMove={handleMouseMove}
+          >
+            Neon
+          </a>
+
+          {isHovering && (
+            <img
+              src={neonLogo}
+              alt="Neon logo"
+              className="neon-logo"
+              style={{
+                top: cursorPos.y + 24,
+                left: cursorPos.x,
+                transform: "translate(-50%, -50%)",
+              }}
+            />
+          )}
+        </span>
         , a Swiss fintech startup, where I work on a hybrid application serving
         over 200,000 users. With a professional background in Angular and Ionic
         development I became proficient in crafting high-end scalable,

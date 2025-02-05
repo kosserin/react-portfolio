@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
   --purple-bg: #150B21;
   --chip-bg: #3d2b53;
   --chip-txt: #B988F4;
+  --neon-red: #FA285A;
 
   // spacings
   --base: 8px;
@@ -95,7 +96,7 @@ body {
 
     &:hover {
         transition: 250ms ease-in;
-        color: var(--chip-txt);
+        color: var(--neon-red);
     }
 }
 
