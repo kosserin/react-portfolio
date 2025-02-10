@@ -11,7 +11,7 @@ export const PROJECTS = [
   {
     title: "Flight company web application",
     description:
-      "Final thesis on college, design, develop and deploy a web application that simulates work with a real database",
+      "Design, develop and deploy a web application that works with a real database. This web app simulates real-world booking for flights where user can search for flights between cities, see details, check if there are available seats and make a reservation.",
     imageSource: flight,
     technologies: ["React", "MongoDB", "JavaScript", "styled-components"],
     linkUrl: "https://github.com/kosserin/flight-company",
